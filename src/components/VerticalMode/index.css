@@ -1,8 +1,8 @@
-.slick-dots{
+.verticalMode .slick-dots{
     left: 68px;
     bottom: 62%;
     /*transform: translateY(50%);*/
 }
-.slick-dots li{
+.verticalMode .slick-dots li{
     display: block;
 }

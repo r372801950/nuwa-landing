@@ -111,7 +111,7 @@ const VerticalMode = () => {
   };
   return (
     <>
-      <div className="slider-container">
+      <div className="slider-container verticalMode">
         <Slider {...settings}>
           {contentStyle.map((item,index)=>{
             return <div key={index}>

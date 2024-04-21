@@ -66,12 +66,14 @@ export default function PageFive() {
                     <div className="mt-[125px] flex items-center justify-between gap-5 self-stretch">
                       <Button
                         shape="round"
-                        color="undefined_undefined"
+                        color="gray_900_01"
                         className="mb-[29px] min-w-[194px] self-end sm:px-5"
                       >
                         Documentations
                       </Button>
-                      <Img src="images/img_.svg" alt="image_two" className="h-[112px] w-[26%]" />
+                      <div className="h-[80px] w-[80px] text-[60px] leading-[58px] font-[600]">
+                        😀
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -88,12 +90,16 @@ export default function PageFive() {
                     <div className="flex items-center gap-[23px]">
                       <Button
                         shape="round"
-                        color="undefined_undefined"
+                        color="gray_900_01"
                         className="mb-[15px] min-w-[194px] self-end !text-black-900_01 sm:px-5"
                       >
                         Donate
                       </Button>
-                      <Img src="images/img__gray_900.svg" alt="image_three" className="h-[112px] w-[29%]" />
+                      <div className="h-[80px] w-[80px] text-[60px] leading-[58px] font-[600]">
+                        😘
+                      </div>
+
+                      {/*<Img src="images/img__gray_900.svg" alt="image_three" className="h-[112px] w-[29%]" />*/}
                     </div>
                   </div>
                 </div>
@@ -110,10 +116,14 @@ export default function PageFive() {
                       Join the world-class team and co-create the “Digital Symbiosis Era”!
                     </Text>
                     <div className="mt-[87px] flex items-center gap-[17px] self-stretch">
-                      <Button shape="round" color="undefined_undefined" className="min-w-[194px] sm:px-5">
+                      <Button shape="round" color="gray_900_01" className="min-w-[194px] sm:px-5">
                         info@nuwalabs.org
                       </Button>
-                      <Img src="images/img__gray_900_112x80.svg" alt="image_four" className="h-[112px] w-[29%]" />
+
+                      <div className="h-[80px] w-[80px] text-[60px] leading-[58px] font-[600]">
+                        😍
+                      </div>
+                      {/*<Img src="images/img__gray_900_112x80.svg" alt="image_four" className="h-[112px] w-[29%]" />*/}
                     </div>
                   </div>
                 </div>
@@ -141,14 +151,17 @@ export default function PageFive() {
                     </div>
                     <div className="mt-3.5 flex items-start gap-[23px]">
                       <div className="flex flex-1 flex-col gap-3.5">
-                        <Button shape="round" color="undefined_undefined" className="w-full sm:px-5">
+                        <Button shape="round" color="gray_900_01" className="w-full sm:px-5">
                           X
                         </Button>
-                        <Button shape="round" color="undefined_undefined" className="w-full sm:px-5">
+                        <Button shape="round" color="gray_900_01" className="w-full sm:px-5">
                           Telegram
                         </Button>
                       </div>
-                      <Img src="images/img__gray_900_112x85.svg" alt="image_five" className="h-[112px] w-[30%]" />
+                      <div className="h-[80px] w-[80px] text-[60px] leading-[58px] font-[600]">
+                        🤣
+                      </div>
+                      {/*<Img src="images/img__gray_900_112x85.svg" alt="image_five" className="h-[112px] w-[30%]" />*/}
                     </div>
                   </div>
                 </div>
@@ -180,16 +193,16 @@ export default function PageFive() {
                   </div>
                 </div>
                 <div className="mt-8 flex gap-[18px]">
-                  <Button size="sm" color="undefined_undefined" className="w-[39px] rounded-[7px]">
+                  <Button size="sm" color="gray_900_01" className="w-[39px] rounded-[7px]">
                     <Img src="images/img_airplane.svg" />
                   </Button>
-                  <Button size="sm" color="undefined_undefined" className="w-[38px] rounded-[7px]">
+                  <Button size="sm" color="gray_900_01" className="w-[38px] rounded-[7px]">
                     <Img src="images/img_save.svg" />
                   </Button>
-                  <Button size="sm" color="undefined_undefined" className="w-[39px] rounded-[7px]">
+                  <Button size="sm" color="gray_900_01" className="w-[39px] rounded-[7px]">
                     <Img src="images/img_user.svg" />
                   </Button>
-                  <Button size="sm" color="undefined_undefined" className="w-[38px] rounded-[7px]">
+                  <Button size="sm" color="gray_900_01" className="w-[38px] rounded-[7px]">
                     <Img src="images/img_1_black_900_03.svg" />
                   </Button>
                 </div>
