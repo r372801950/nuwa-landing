@@ -1,0 +1,28 @@
+.slick-prev{
+    left: 50px;
+    z-index: 10;
+}
+.slick-next{
+    right: 50px;
+    z-index: 10;
+
+}
+/*!* 覆盖slick的默认圆点样式 *!
+.slick-dots li button {
+    width: 30px !important; !* 增加按钮的宽度 *!
+    height: 30px !important; !* 增加按钮的高度 *!
+    line-height: 30px !important; !* 确保数字垂直居中 *!
+    font-size: 14px !important; !* 设置字体大小 *!
+    border-radius: 50% !important; !* 圆形按钮 *!
+    background-color: #fff !important; !* 设置背景色 *!
+    color: black !important; !* 设置字体颜色 *!
+    border: 2px solid black !important; !* 设置边框颜色 *!
+    text-align: center !important; !* 确保文字居中 *!
+    opacity: 1 !important; !* 确保按钮不透明 *!
+}
+
+.slick-dots li.slick-active button {
+    background-color: blue !important; !* 激活状态的背景颜色 *!
+    color: white !important; !* 激活状态的字体颜色 *!
+}*/
+

@@ -27,13 +27,23 @@ export default function PageOne() {
       {/* main layout section */}
       <div className="relative h-[100vh] w-full bg-indigo-50 overflow-hidden">
         {/* empty view section */}
-        <div className="absolute bottom-[-377.00px] right-[19.00px] m-auto h-[972px] w-[68%] rounded-[486px] bg-blue_gray-50_01" />
+        <div
+          className="absolute bottom-[-377.00px] right-[19.00px] m-auto h-[972px] w-[68%] rounded-[486px] bg-blue_gray-50_01" />
+       {/* <img
+          loading="lazy"
+          src="images/page3/page3bg1.png"
+          className="mt-8 w-full aspect-[1.72] max-md:max-w-full"
+        />*/}
         <div className="absolute bottom-[-5.00px] right-[19.00px] m-auto h-[972px] w-[68%] bg-cover bg-no-repeat"
-             style={{ backgroundImage: "url('/public/images/img_group_903.png')", backgroundPosition: 'top', backgroundSize:'228%' }} />
+             style={{
+               backgroundImage: "url('/public/images/img_group_903.png')",
+               backgroundPosition: "top",
+               backgroundSize: "228%"
+             }} />
 
         <div
           className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[100vh] w-full bg-cover bg-no-repeat pt-[45px] md:h-auto md:pt-5"
-          >
+        >
           {/* hero section */}
           <div className="flex flex-col items-center">
             {/* navigation menu section */}
@@ -101,7 +111,6 @@ export default function PageOne() {
               {/*    human civilization*/}
               {/*  </>*/}
               {/*</Text>*/}
-
 
 
               {/* 只渲染当前活跃的行 */}
