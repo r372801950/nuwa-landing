@@ -1,0 +1,8 @@
+.slick-dots{
+    left: 68px;
+    bottom: 62%;
+    /*transform: translateY(50%);*/
+}
+.slick-dots li{
+    display: block;
+}

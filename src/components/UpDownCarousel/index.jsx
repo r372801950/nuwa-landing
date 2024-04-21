@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { Carousel } from "antd";
-
+// todo antd可以卸载了
 const contentStyle = [
   {
     style:{
@@ -38,8 +38,7 @@ const UpDownCarousel = () => {
         {contentStyle.map(item=>{
           return <div>
             <div className="h-[100vh] w-full bg-[length:980px_787px] bg-bottom bg-no-repeat pt-[45px] md:h-auto md:pt-5"
-                 // style={item.style}>
-                 style={contentStyle[0].style}>
+                 style={item.style}>
 
             </div>
           </div>

@@ -4,8 +4,8 @@ import Home from "pages/Home";
 import NotFound from "pages/NotFound";
 import PageOne from "pages/PageOne";
 import PageTwo from "pages/PageTwo";
-import PageThree from "pages/PageThree";
-import PageFour from "pages/PageFour";
+import PageThree from "pages/PageThree2";
+import PageFour from "pages/PageThree";
 import PageFive from "pages/PageFive";
 
 const ProjectRoutes = () => {

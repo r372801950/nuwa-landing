@@ -1,86 +1,86 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Img, Text, Heading, Button } from "../../components";
-import Header from "../../components/Header";
-
-export default function PageThree() {
+import { Img, Text, Button, Heading } from "../../components";
+import VerticalMode from "../../components/VerticalMode";
+export default function PageFour() {
   return (
     <>
       <Helmet>
-        <title>Gaming Projects - Digital Life Integration</title>
+        <title>Creation Platform - Nuwa Digital Life Labs</title>
         <meta
           name="description"
-          content="Discover Digital Life Game Builder for seamless integration of digital life into your games. Simplify your game development with our APIs."
+          content="Explore the Nuwa Digital Life Labs Creation Platform. A hub for innovation in digital life and technology integration."
         />
       </Helmet>
 
       {/* main layout section */}
-      <div className="relative h-[900px] w-full bg-gradient pr-[31px] pt-[31px] shadow-xs sm:pr-5 sm:pt-5">
-        {/* logo section */}
-        <Img
-          src="images/img_55_5556.png"
-          alt="image"
-          className="absolute bottom-[-195.00px] right-[16%] m-auto h-[817px] w-[63%] object-cover"
-        />
-        <div className="absolute bottom-0 left-0 right-0 top-0 m-auto flex h-max w-full flex-col gap-[995px] md:gap-[746px] sm:gap-[497px]">
-          <div className="w-full max-w-[1359px] md:p-5">
-            {/* navigation section */}
-            <Header className="flex items-center justify-between gap-5 md:flex-col" />
+      <div className="relative h-[100vh] w-full bg-indigo-50 overflow-hidden">
+        {/* empty view section */}
 
-            {/* intro section */}
-            <div className="mt-16 flex flex-col items-end">
-              <div className="flex flex-wrap gap-[23px]">
-                <Text size="xl" as="p" className="self-start !font-pangmenzhengdao !text-gray-900_03">
-                  Laboratory{" "}
-                </Text>
-                <Text size="xl" as="p" className="!font-pangmenzhengdao !text-blue_gray-400">
-                  Projects
-                </Text>
-              </div>
-            </div>
 
-            {/* features section */}
-            <div className="mt-[26px] flex items-center justify-between gap-5 md:flex-col">
-              <div className="flex w-[55%] flex-col items-start gap-[81px] md:w-full md:gap-[60px] sm:gap-10">
-                <Img src="images/img_group_35696.svg" alt="image_two" className="h-[121px] w-[8%]" />
-                <div className="ml-[13px] flex flex-col items-start md:ml-0">
-                  <div className="flex flex-col items-start">
-                    <Heading size="xl" as="h1" className="ml-2 !text-gray-900_03 md:ml-0">
-                      Digital Life +{" "}
-                    </Heading>
-                    <Heading size="2xl" as="h2" className="relative mt-[-7px] !text-gray-900_03">
-                      Gaming
-                    </Heading>
+        <div
+          className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[100vh] w-full bg-cover bg-no-repeat pt-[45px] md:h-auto md:pt-5"
+        >
+          {/* hero section */}
+          <div className="flex flex-col items-center">
+            {/* navigation menu section */}
+            <header className="mx-auto flex w-full max-w-[1300px] flex-col items-start md:p-5">
+              {/* logo and menu section */}
+              <div className="flex items-center justify-between gap-5 self-stretch md:flex-col">
+                <Img src="images/img_group_35684.png" alt="image" className="h-[19px] w-[9%] object-cover md:w-full" />
+                <div className="flex w-[38%] items-center justify-between gap-5 md:w-full sm:flex-col">
+                  <ul className="flex flex-wrap gap-[49px]">
+                    <li>
+                      <a href="#" className="cursor-pointer">
+                        <Heading as="h6" className="text-center hover:text-yellow-800">
+                          Creation Platform
+                        </Heading>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <Heading as="h6" className="text-center !text-yellow-800">
+                          role.ai
+                        </Heading>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" className="cursor-pointer">
+                        <Heading as="h6" className="text-center hover:text-yellow-800">
+                          BRC-1111{" "}
+                        </Heading>
+                      </a>
+                    </li>
+                  </ul>
+                  <div
+                    className="flex items-center gap-2 rounded-[12px] border border-solid border-blue_gray-100_01 pl-3">
+                    <Text size="s" as="p" className="h-[17px] !font-sfpro tracking-[0.14px] !text-blue_gray-900_02">
+                      EN
+                    </Text>
+                    <Button
+                      variant="fill"
+                      className="min-w-[39px] rounded-bl-[12px] rounded-tl-[12px] font-sfpro font-medium tracking-[0.14px]"
+                    >
+                      CN
+                    </Button>
                   </div>
-                  <Button
-                    size="md"
-                    color="undefined_undefined"
-                    rightIcon={<Img src="images/img_group_35697.svg" alt="Group 35697" className="h-[10px] w-[35px]" />}
-                    className="relative ml-2 mt-[-18px] min-w-[231px] gap-[35px] rounded-[26px] font-semibold md:ml-0 sm:px-5"
-                  >
-                    Read
-                  </Button>
                 </div>
               </div>
-              <div className="mb-[115px] flex w-[31%] flex-col gap-6 self-end md:w-full">
-                <div className="rounded-[12px] bg-blue_gray-50 py-[11px] pl-[11px]">
-                  <Heading size="lg" as="h3" className="my-[9px] !text-gray-900_04">
-                    <span className="text-gray-900_04">Digital Life&nbsp;</span>
-                    <span className="text-gray-900_04">Game Builder</span>
-                  </Heading>
-                </div>
-                <div className="flex rounded-[12px] bg-blue_gray-50 p-[19px]">
-                  <Text as="p" className="w-[95%] !text-gray-900">
-                    Extremely easy to integrate any digital life to your games with simple APIs.
-                  </Text>
-                </div>
-              </div>
-            </div>
-          </div>
+              <Text size="xs" as="p" className="relative mt-[-3px] text-center !text-blue_gray-700">
+                Nuwa Digital Life Labs
+              </Text>
+            </header>
 
-          {/* footer image section */}
-          <Img src="images/img_image_159.png" alt="image159_one" className="h-px w-[98%] object-cover" />
+
+            {/* image gallery section */}
+            <div className="marquee w-[178%] fixed left-0 bottom-0 flex min-w-full overflow-hidden whitespace-nowrap">
+
+            </div>
+
+          </div>
         </div>
+
+        <VerticalMode />
       </div>
     </>
   );
