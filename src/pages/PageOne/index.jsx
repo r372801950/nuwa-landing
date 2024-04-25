@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import { Img, Text, Button, Heading } from "../../components";
 import TypewriterText from "../../components/TypewriterText";
+import BottomSlick from "../../components/BottomSlick";
 // import TextDisplay from "../../components/TextDisplay";
 const arr=[['#work for us'],['{being a good accompany}'],['{being everywhere}'],['{unprecedented creativity}'],['{true freedom}'],['Reshape','{human civilization}'],['Reshape','{human lifestyle}'],['Reshape','EVERYTHING.']]
 export default function PageOne() {
@@ -95,7 +96,7 @@ export default function PageOne() {
             </header>
 
             {/* headline section */}
-            <div className="mx-auto mt-[63px] w-full max-w-[1308px] md:p-5">
+            <div className="mx-auto mt-[60px] w-full max-w-[1308px] md:p-5">
               <Text size="5xl" as="p" className="!font-pangmenzhengdao !text-white-A700">
                 <>
                   DIGITAL <br />
@@ -104,14 +105,7 @@ export default function PageOne() {
               </Text>
             </div>
 
-            <div className="mx-auto mt-[63px] w-full max-w-[1308px] md:p-5">
-              {/*<Text size="5xl" as="p" className="!font-pangmenzhengdao" style={{color: 'transparent','-webkit-text-stroke': '2px white','text-stroke': '2px white'  }}>*/}
-              {/*  <>*/}
-              {/*    Reshape<br />*/}
-              {/*    human civilization*/}
-              {/*  </>*/}
-              {/*</Text>*/}
-
+            <div className="mx-auto w-full max-w-[1308px] md:p-5">
 
               {/* 只渲染当前活跃的行 */}
               <TypewriterText
@@ -125,7 +119,11 @@ export default function PageOne() {
             </div>
 
             {/* image gallery section */}
-            <div className="marquee w-[178%] fixed left-0 bottom-0 flex min-w-full overflow-hidden whitespace-nowrap">
+            <div className="bg-[#fff] fixed left-[-1px] bottom-0 flex h-[128px] items-center">
+              <BottomSlick />
+            </div>
+
+            {/*<div className="marquee w-[178%] fixed left-0 bottom-0 flex min-w-full overflow-hidden whitespace-nowrap">
               {[...Array(2)].map((_, i) => (
                 <div
                   key={i}
@@ -169,47 +167,6 @@ export default function PageOne() {
                   <div className="ml-[49px] h-[67px] w-px bg-gray-700_49 md:ml-0 md:h-px md:w-[67px] md:p-5" />
                 </div>
               ))}
-            </div>
-
-            {/*<div
-              className="fixed bottom-0 w-[100%] flex items-center self-stretch bg-white-A700_e5 p-[27px] md:flex-col sm:p-5 marquee">
-              <Img
-                src="images/img_14_4x.png"
-                alt="144x_one"
-                className="ml-[13px] h-[65px] w-[9%] self-end object-cover md:ml-0 md:w-full"
-              />
-              <div
-                className="mb-[3px] ml-[52px] mt-1 h-[67px] w-px bg-gray-700_49 md:ml-0 md:h-px md:w-[67px] md:p-5" />
-              <Img
-                src="images/img_4_4x.png"
-                alt="44x_one"
-                className="mb-[13px] ml-[42px] h-[40px] w-[22%] self-end object-cover md:ml-0 md:w-full"
-              />
-              <div
-                className="mb-[3px] ml-[52px] mt-1 h-[67px] w-px bg-gray-700_49 md:ml-0 md:h-px md:w-[67px] md:p-5" />
-              <div className="ml-[43px] flex w-[24%] items-center justify-between gap-5 md:ml-0 md:w-full">
-                <div className="h-full w-px bg-gray-700_49" />
-                <Img
-                  src="images/img_13_4x.png"
-                  alt="134x_one"
-                  className="mb-1 h-[51px] w-[60%] self-end object-cover"
-                />
-                <div className="h-full w-px bg-gray-700_49" />
-              </div>
-              <div
-                className="mb-[3px] ml-[52px] mt-1 h-[67px] w-px bg-gray-700_49 md:ml-0 md:h-px md:w-[67px] md:p-5" />
-              <Img
-                src="images/img_9_4x.png"
-                alt="94x_one"
-                className="mb-2 ml-[49px] h-[50px] w-[11%] self-end object-cover md:ml-0 md:w-full"
-              />
-              <div className="ml-[46px] h-[67px] w-px bg-gray-700_49 md:ml-0 md:h-px md:w-[67px] md:p-5" />
-              <Img
-                src="images/img_2_4x.png"
-                alt="24x_one"
-                className="mb-2 ml-12 h-[50px] w-[17%] self-end object-cover md:ml-0 md:w-full"
-              />
-              <div className="ml-[49px] h-[67px] w-px bg-gray-700_49 md:ml-0 md:h-px md:w-[67px] md:p-5" />
             </div>*/}
 
           </div>

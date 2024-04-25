@@ -44,7 +44,7 @@ const TypewriterText = ({ lines, speed = 200, onFinishedTyping }) => {
   }, [displayedText, currentIndex, currentLine, lines, speed]);
 
   return (
-    <div className={`text-5xl font-pangmenzhengdao text-[113px]`} style={{ color: "transparent", WebkitTextStroke: "2px white", textStroke: "2px white" }}>
+    <div className={`w-[1100px] text-5xl font-pangmenzhengdao text-[113px]`} style={{ color: "transparent", WebkitTextStroke: "2px white", textStroke: "2px white" }}>
       {displayedText.map((line, index) => (
         <p key={index} className="relative">
           {line}

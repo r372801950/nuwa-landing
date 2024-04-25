@@ -28,7 +28,6 @@ function ResizableSlick({ onCurrentSlideChange }) {
     beforeChange: (oldIndex, newIndex) => {
       onCurrentSlideChange(newIndex); // 在滑块动画开始前更新状态
     },
-    // afterChange: (current) => onCurrentSlideChange(current)
     customPaging: function(i) {
       return (
         <button style={{ width: "20px", height: "20px" }}>
