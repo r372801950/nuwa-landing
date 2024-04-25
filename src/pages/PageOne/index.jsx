@@ -119,55 +119,9 @@ export default function PageOne() {
             </div>
 
             {/* image gallery section */}
-            <div className="bg-[#fff] fixed left-[-1px] bottom-0 flex h-[128px] items-center">
+            <div className="bg-[#fff] absolute left-[-1px] bottom-0 flex h-[128px] items-center">
               <BottomSlick />
             </div>
-
-            {/*<div className="marquee w-[178%] fixed left-0 bottom-0 flex min-w-full overflow-hidden whitespace-nowrap">
-              {[...Array(2)].map((_, i) => (
-                <div
-                  key={i}
-                  className="w-full flex items-center self-stretch bg-white-A700_e5 p-[27px] md:flex-col sm:p-5">
-                  <Img
-                    src="images/img_14_4x.png"
-                    alt="144x_one"
-                    className="ml-[13px] h-[65px] w-[9%] self-end object-cover md:ml-0 md:w-full"
-                  />
-                  <div
-                    className="mb-[3px] ml-[52px] mt-1 h-[67px] w-px bg-gray-700_49 md:ml-0 md:h-px md:w-[67px] md:p-5" />
-                  <Img
-                    src="images/img_4_4x.png"
-                    alt="44x_one"
-                    className="mb-[13px] ml-[42px] h-[40px] w-[22%] self-end object-cover md:ml-0 md:w-full"
-                  />
-                  <div
-                    className="mb-[3px] ml-[52px] mt-1 h-[67px] w-px bg-gray-700_49 md:ml-0 md:h-px md:w-[67px] md:p-5" />
-                  <div className="ml-[43px] flex w-[24%] items-center justify-between gap-5 md:ml-0 md:w-full">
-                    <div className="h-full w-px bg-gray-700_49" />
-                    <Img
-                      src="images/img_13_4x.png"
-                      alt="134x_one"
-                      className="mb-1 h-[51px] w-[60%] self-end object-cover"
-                    />
-                    <div className="h-full w-px bg-gray-700_49" />
-                  </div>
-                  <div
-                    className="mb-[3px] ml-[52px] mt-1 h-[67px] w-px bg-gray-700_49 md:ml-0 md:h-px md:w-[67px] md:p-5" />
-                  <Img
-                    src="images/img_9_4x.png"
-                    alt="94x_one"
-                    className="mb-2 ml-[49px] h-[50px] w-[11%] self-end object-cover md:ml-0 md:w-full"
-                  />
-                  <div className="ml-[46px] h-[67px] w-px bg-gray-700_49 md:ml-0 md:h-px md:w-[67px] md:p-5" />
-                  <Img
-                    src="images/img_2_4x.png"
-                    alt="24x_one"
-                    className="mb-2 ml-12 h-[50px] w-[17%] self-end object-cover md:ml-0 md:w-full"
-                  />
-                  <div className="ml-[49px] h-[67px] w-px bg-gray-700_49 md:ml-0 md:h-px md:w-[67px] md:p-5" />
-                </div>
-              ))}
-            </div>*/}
 
           </div>
         </div>
