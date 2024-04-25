@@ -1,0 +1,37 @@
+@keyframes rotate-shake {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+    75% {
+        transform: rotate(15deg);
+    }
+}
+.img-father:hover .img-hover-animate{
+    animation: rotate-shake 0.5s ease-in-out;
+}
+
+.breathing-circle {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #ffa500, #ff4500);
+    border-radius: 50%;
+    animation: breathe 2s infinite;
+}
+
+@keyframes breathe {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+}
+

@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Img, Text, Button, Heading } from "../../components";
 import Header from "../../components/Header";
+import './index.css'
 
 export default function PageFive() {
   return (
@@ -13,7 +14,8 @@ export default function PageFive() {
           content="Become a part of the vibrant digital life creator community with Nuwa Labs. Learn about the BRC-1111 protocol, contribute to our research, and help forge the era of digital symbiosis."
         />
       </Helmet>
-      <div className="flex w-full flex-col items-center gap-[676px] bg-gradient pt-[45px] shadow-xs md:gap-[507px] md:pt-5 sm:gap-[338px]">
+      <div className="flex w-full flex-col items-center gap-[676px] bg-gradient-to-r from-white-A700 to-gray-200 pt-[45px] shadow-xs md:gap-[507px] md:pt-5 sm:gap-[338px]">
+      {/*<div className="flex w-full flex-col items-center gap-[676px] bg-gradient-to-r from-green-400 to-blue-500 pt-[45px] shadow-xs md:gap-[507px] md:pt-5 sm:gap-[338px]">*/}
         <div className="mx-auto flex w-full max-w-[1303px] flex-col gap-9 md:p-5">
           {/* header section */}
           <Header className="flex items-center justify-between gap-5 md:flex-col" />
@@ -22,9 +24,14 @@ export default function PageFive() {
             <div className="flex gap-[22px] md:flex-col">
               <div className="flex w-[45%] flex-col items-center gap-12 rounded-[22px] bg-white-A700_01 py-[54px] md:w-full md:py-5">
                 <div className="flex flex-col items-center self-stretch">
-                  <div className="relative z-[1] flex w-[57%] flex-col items-end justify-end rounded-[160px] bg-yellow-900_7f py-[62px] pl-14 pr-[62px] blur-[200.00px] backdrop-opacity-[0.5] md:w-full md:p-5">
+                {/*  <div className="relative z-[1] flex w-[57%] flex-col items-end justify-end rounded-[160px] bg-yellow-900_7f py-[62px] pl-14 pr-[62px] blur-[200.00px] backdrop-opacity-[0.5] md:w-full md:p-5">
                     <div className="mr-[26px] mt-[82px] flex w-[65%] flex-col items-center rounded-[57px] border-2 border-solid border-white-A700_6d bg-black-900_03 p-[29px] shadow-sm md:mr-0 md:w-full sm:p-5">
-                      <Img src="images/img_group_35513.png" alt="image_one" className="h-[55px] w-[51%] object-cover" />
+                      <Img src="images/page5/logo5.png" alt="image_one" className="h-[55px] w-[51%] object-cover" />
+                    </div>
+                  </div>*/}
+                  <div className="breathing-circle">
+                    <div className="mr-[26px] mt-[82px] flex w-[65%] flex-col items-center rounded-[57px] border-2 border-solid border-white-A700_6d bg-black-900_03 p-[29px] shadow-sm md:mr-0 md:w-full sm:p-5">
+                      <Img src="images/page5/logo5.png" alt="image_one" className="h-[55px] w-[51%] object-cover" />
                     </div>
                   </div>
                   <Text
@@ -55,7 +62,7 @@ export default function PageFive() {
 
               {/* features section */}
               <div className="flex flex-1 flex-col gap-[18px] md:self-stretch">
-                <div className="flex flex-col items-center rounded-[22px] bg-white-A700_01">
+                <div className="flex flex-col items-center rounded-[22px] bg-white-A700_01 img-father pb-3.5">
                   <div className="mt-[29px] flex w-[91%] flex-col items-start md:w-full md:p-5">
                     <Heading size="lg" as="h1" className="!text-gray-900">
                       Learn
@@ -67,17 +74,16 @@ export default function PageFive() {
                       <Button
                         shape="round"
                         color="gray_900_01"
-                        className="mb-[29px] min-w-[194px] self-end sm:px-5"
+                        className="min-w-[194px] sm:px-5"
                       >
                         Documentations
                       </Button>
-                      <div className="h-[80px] w-[80px] text-[60px] leading-[58px] font-[600]">
-                        😀
-                      </div>
+                      <Img src="images/page5/emo1.png" alt="image_three" className="h-[80px] w-[80px] img-hover-animate" />
+
                     </div>
                   </div>
                 </div>
-                <div className="rounded-[22px] bg-white-A700_01 p-3.5">
+                <div className="rounded-[22px] bg-white-A700_01 p-3.5 img-father">
                   <div className="mt-[17px] flex flex-col gap-[76px] md:gap-[57px] sm:gap-[38px]">
                     <div className="flex flex-col gap-7">
                       <Heading size="lg" as="h2" className="!text-gray-900">
@@ -91,15 +97,11 @@ export default function PageFive() {
                       <Button
                         shape="round"
                         color="gray_900_01"
-                        className="mb-[15px] min-w-[194px] self-end !text-black-900_01 sm:px-5"
+                        className="min-w-[194px] !text-black-900_01 sm:px-5"
                       >
                         Donate
                       </Button>
-                      <div className="h-[80px] w-[80px] text-[60px] leading-[58px] font-[600]">
-                        😘
-                      </div>
-
-                      {/*<Img src="images/img__gray_900.svg" alt="image_three" className="h-[112px] w-[29%]" />*/}
+                      <Img src="images/page5/emo3.png" alt="image_three" className="h-[80px] w-[80px] img-hover-animate" />
                     </div>
                   </div>
                 </div>
@@ -107,7 +109,7 @@ export default function PageFive() {
 
               {/* community section */}
               <div className="flex flex-1 flex-col gap-[18px] md:self-stretch">
-                <div className="flex flex-col items-center rounded-[22px] bg-white-A700_01">
+                <div className="flex flex-col items-center rounded-[22px] bg-white-A700_01 img-father pb-3.5">
                   <div className="mt-7 flex w-[87%] flex-col items-start md:w-full md:p-5">
                     <Heading size="lg" as="h3" className="!text-gray-900">
                       Join us
@@ -119,16 +121,12 @@ export default function PageFive() {
                       <Button shape="round" color="gray_900_01" className="min-w-[194px] sm:px-5">
                         info@nuwalabs.org
                       </Button>
-
-                      <div className="h-[80px] w-[80px] text-[60px] leading-[58px] font-[600]">
-                        😍
-                      </div>
-                      {/*<Img src="images/img__gray_900_112x80.svg" alt="image_four" className="h-[112px] w-[29%]" />*/}
+                      <Img src="images/page5/emo2.png" alt="image_three" className="h-[80px] w-[80px] img-hover-animate" />
                     </div>
                   </div>
                 </div>
-                <div className="rounded-[22px] bg-white-A700_01">
-                  <div className="mt-[30px] flex flex-col">
+                <div className="rounded-[22px] bg-white-A700_01 img-father">
+                  <div className="mt-[30px] flex flex-col p-3.5">
                     <div className="flex w-[89%] flex-col items-start gap-6 md:w-full">
                       <Heading size="lg" as="h4" className="ml-[3px] !text-gray-900 md:ml-0">
                         Community
@@ -137,30 +135,18 @@ export default function PageFive() {
                         Join our community and follow us on social medias!
                       </Text>
                     </div>
-                    <div className="mt-[86px] flex w-[64%] flex-col items-start md:w-full">
-                      <Heading size="s" as="h5" className="ml-[18px] !text-white-A700_01 md:ml-0">
-                        Discord
-                      </Heading>
-                      <Button
-                        variant="fill"
-                        shape="round"
-                        className="relative mt-[-34px] w-full border border-solid border-gray-900_01 sm:px-5"
-                      >
-                        Discord
-                      </Button>
-                    </div>
-                    <div className="mt-3.5 flex items-start gap-[23px]">
+                    <div className="mt-[90px] flex items-start gap-[23px]">
                       <div className="flex flex-1 flex-col gap-3.5">
-                        <Button shape="round" color="gray_900_01" className="w-full sm:px-5">
+                        <Button shape="round" color="gray_900_01" className="w-[194px] sm:px-5">
+                          Discord
+                        </Button>
+                        <Button shape="round" color="gray_900_01" className="w-[194px] sm:px-5">
                           X
                         </Button>
-                        <Button shape="round" color="gray_900_01" className="w-full sm:px-5">
+                        <Button shape="round" color="gray_900_01" className="w-[194px] sm:px-5">
                           Telegram
                         </Button>
-                      </div>
-                      <div className="h-[80px] w-[80px] text-[60px] leading-[58px] font-[600]">
-                        🤣
-                      </div>
+                      </div><Img src="images/page5/emo4.png" alt="image_three" className="mt-[60px] h-[80px] w-[80px] img-hover-animate" />
                       {/*<Img src="images/img__gray_900_112x85.svg" alt="image_five" className="h-[112px] w-[30%]" />*/}
                     </div>
                   </div>

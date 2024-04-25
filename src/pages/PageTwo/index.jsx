@@ -6,19 +6,19 @@ import ResizableSlick from "../../components/ResizableSlick";
 
 const slideInfo=[
   {
-    name:'NLP',
+    name:'Natural Language Processing (NLP)',
     title:'Natural Language Processing (NLP)',
     info:'Advancing computer interaction through natural language, focusing on state-of-the-art text understanding, generation, and intelligent dialogue technologies for innovative NLP applications.'
   },
   {
     name:'Game Engine',
     title:'Game Engine',
-    info:'Advancing computer interaction through natural language, focusing on state-of-the-art text understanding, generation, and intelligent dialogue technologies for innovative NLP applications.'
+    info:'Enhancing virtual environment realism and interactivity, specializing in game engine innovations for complex physical simulations, high-quality rendering, and interactive digital entities.'
   },
   {
     name:'Voice Technology',
     title:'Voice Technology',
-    info:'Advancing computer interaction through natural language, focusing on state-of-the-art text understanding, generation, and intelligent dialogue technologies for innovative NLP applications.'
+    info:'Fostering natural human-digital entity interactions via advanced voice technologies, including voiceprint recognition, speech recognition, synthesis, and conversion.'
   },
   {
     name:'Computer Vision',
@@ -28,12 +28,12 @@ const slideInfo=[
   {
     name:'Blockchain',
     title:'Blockchain',
-    info:'Enabling digital entities to better understand and create visual content, focusing on advanced analysis, detection, tracking, recognition, and generation of portraits and video content.'
+    info:'Investigating blockchain\'s potential in digital life applications, with an emphasis on distributed ledger technology, smart contracts, encryption, and applications in gaming, digital rights management, and identity verification.'
   },
   {
     name:'3D Modeling and Animation',
     title:'3D Modeling and Animation',
-    info:'Enabling digital entities to better understand and create visual content, focusing on advanced analysis, detection, tracking, recognition, and generation of portraits and video content.'
+    info:'Improving 3D content creation efficiency and quality, exploring advanced modeling, animation, and real-time rendering techniques to accelerate digital and virtual content production.'
   },
 
 ]
