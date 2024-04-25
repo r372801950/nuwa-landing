@@ -14,7 +14,7 @@ export default function PageFive() {
           content="Become a part of the vibrant digital life creator community with Nuwa Labs. Learn about the BRC-1111 protocol, contribute to our research, and help forge the era of digital symbiosis."
         />
       </Helmet>
-      <div className="flex w-full flex-col items-center gap-[676px] bg-gradient-to-r from-white-A700 to-gray-200 pt-[45px] shadow-xs md:gap-[507px] md:pt-5 sm:gap-[338px]">
+      <div className="flex w-full flex-col items-center gap-[19px] bg-gradient-to-r from-white-A700 to-gray-200 pt-[45px] shadow-xs md:gap-[507px] md:pt-5 sm:gap-[338px]">
       {/*<div className="flex w-full flex-col items-center gap-[676px] bg-gradient-to-r from-green-400 to-blue-500 pt-[45px] shadow-xs md:gap-[507px] md:pt-5 sm:gap-[338px]">*/}
         <div className="mx-auto flex w-full max-w-[1303px] flex-col gap-9 md:p-5">
           {/* header section */}
@@ -22,7 +22,7 @@ export default function PageFive() {
           <div className="flex flex-col gap-[55px] sm:gap-[27px]">
             {/* hero section */}
             <div className="flex gap-[22px] md:flex-col">
-              <div className="flex w-[45%] flex-col items-center gap-12 rounded-[22px] bg-white-A700_01 py-[54px] md:w-full md:py-5">
+              <div className="flex w-[45%] h-[805px] flex-col items-center gap-12 rounded-[22px] bg-white-A700_01 py-[54px]">
                 <div className="flex flex-col items-center self-stretch">
                 {/*  <div className="relative z-[1] flex w-[57%] flex-col items-end justify-end rounded-[160px] bg-yellow-900_7f py-[62px] pl-14 pr-[62px] blur-[200.00px] backdrop-opacity-[0.5] md:w-full md:p-5">
                     <div className="mr-[26px] mt-[82px] flex w-[65%] flex-col items-center rounded-[57px] border-2 border-solid border-white-A700_6d bg-black-900_03 p-[29px] shadow-sm md:mr-0 md:w-full sm:p-5">
@@ -30,16 +30,16 @@ export default function PageFive() {
                     </div>
                   </div>*/}
                   <div className="breathing-circle">
-                    <div className="mr-[26px] mt-[82px] flex w-[65%] flex-col items-center rounded-[57px] border-2 border-solid border-white-A700_6d bg-black-900_03 p-[29px] shadow-sm md:mr-0 md:w-full sm:p-5">
-                      <Img src="images/page5/logo5.png" alt="image_one" className="h-[55px] w-[51%] object-cover" />
-                    </div>
+                    {/*<div className="mr-[26px] mt-[82px] flex w-[65%] flex-col items-center rounded-[57px] border-2 border-solid border-white-A700_6d bg-black-900_03 p-[29px] shadow-sm md:mr-0 md:w-full sm:p-5">*/}
+                    {/*</div>*/}
+                    <Img src="images/page5/logo5.png" alt="image_one" className="object-cover" />
                   </div>
                   <Text
                     size="xl"
                     as="p"
                     className="relative mt-[-33px] text-center !font-pangmenzhengdao leading-[60px] !text-black-900_01"
                   >
-                    <span className="text-black-900_01">
+                    <span className="text-black-900_01 !font-pangmenzhengdao">
                       <>
                         Learn, Contact
                         <br />
@@ -70,7 +70,7 @@ export default function PageFive() {
                     <Text as="p" className="mt-8 w-[92%] !text-gray-900 md:w-full">
                       Discover more about the BRC-1111 protocol and other projects at Nüwa Laboratory.
                     </Text>
-                    <div className="mt-[125px] flex items-center justify-between gap-5 self-stretch">
+                    <div className="mt-[144px] flex items-center justify-between gap-5 self-stretch">
                       <Button
                         shape="round"
                         color="gray_900_01"
@@ -84,7 +84,7 @@ export default function PageFive() {
                   </div>
                 </div>
                 <div className="rounded-[22px] bg-white-A700_01 p-3.5 img-father">
-                  <div className="mt-[17px] flex flex-col gap-[76px] md:gap-[57px] sm:gap-[38px]">
+                  <div className="mt-[17px] flex flex-col gap-[111px]">
                     <div className="flex flex-col gap-7">
                       <Heading size="lg" as="h2" className="!text-gray-900">
                         Support Nüwa
@@ -117,7 +117,7 @@ export default function PageFive() {
                     <Text as="p" className="mt-8 w-[94%] !text-gray-900 md:w-full">
                       Join the world-class team and co-create the “Digital Symbiosis Era”!
                     </Text>
-                    <div className="mt-[87px] flex items-center gap-[17px] self-stretch">
+                    <div className="mt-[86px] flex items-center gap-[17px] self-stretch">
                       <Button shape="round" color="gray_900_01" className="min-w-[194px] sm:px-5">
                         info@nuwalabs.org
                       </Button>
@@ -126,7 +126,7 @@ export default function PageFive() {
                   </div>
                 </div>
                 <div className="rounded-[22px] bg-white-A700_01 img-father">
-                  <div className="mt-[30px] flex flex-col p-3.5">
+                  <div className="mt-[15px] flex flex-col p-3.5">
                     <div className="flex w-[89%] flex-col items-start gap-6 md:w-full">
                       <Heading size="lg" as="h4" className="ml-[3px] !text-gray-900 md:ml-0">
                         Community
@@ -135,7 +135,7 @@ export default function PageFive() {
                         Join our community and follow us on social medias!
                       </Text>
                     </div>
-                    <div className="mt-[90px] flex items-start gap-[23px]">
+                    <div className="mt-[116px] flex items-start gap-[23px]">
                       <div className="flex flex-1 flex-col gap-3.5">
                         <Button shape="round" color="gray_900_01" className="w-[194px] sm:px-5">
                           Discord
@@ -204,7 +204,6 @@ export default function PageFive() {
             </div>
           </div>
         </div>
-        <Img src="images/img_image_159_1x1375.png" alt="image159_one" className="h-px w-[95%] object-cover" />
       </div>
     </>
   );

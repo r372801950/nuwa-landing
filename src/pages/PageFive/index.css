@@ -17,9 +17,9 @@
 }
 
 .breathing-circle {
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(circle, #ffa500, #ff4500);
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(246, 128, 16, 0.5), rgba(246, 128, 16, 0.5));
     border-radius: 50%;
     animation: breathe 2s infinite;
 }
