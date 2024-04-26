@@ -19,9 +19,22 @@
 .breathing-circle {
     width: 350px;
     height: 350px;
-    background: radial-gradient(circle, rgba(246, 128, 16, 0.5), rgba(246, 128, 16, 0.5));
+    background: url("images/breathing-circle.png") center;
+    background-size: cover;
     border-radius: 50%;
+    position: relative;
+    overflow: hidden;
     animation: breathe 2s infinite;
+}
+
+.breathing-circle::after {
+    content: "";
+    position: absolute;
+    top: 5%; left: 5%;
+    right: 5%; bottom: 5%;
+    background: inherit;
+    filter: blur(8px); /* 增加模糊效果 */
+    z-index: -1;
 }
 
 @keyframes breathe {
@@ -30,7 +43,7 @@
         opacity: 1;
     }
     50% {
-        transform: scale(1.2);
+        transform: scale(1.5);
         opacity: 0.7;
     }
 }

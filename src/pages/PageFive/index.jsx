@@ -29,11 +29,13 @@ export default function PageFive() {
                       <Img src="images/page5/logo5.png" alt="image_one" className="h-[55px] w-[51%] object-cover" />
                     </div>
                   </div>*/}
-                  <div className="breathing-circle">
-                    {/*<div className="mr-[26px] mt-[82px] flex w-[65%] flex-col items-center rounded-[57px] border-2 border-solid border-white-A700_6d bg-black-900_03 p-[29px] shadow-sm md:mr-0 md:w-full sm:p-5">*/}
-                    {/*</div>*/}
-                    <Img src="images/page5/logo5.png" alt="image_one" className="object-cover" />
+                  <div className="breathing-box relative">
+                    <div className="breathing-circle"></div>
+                    <Img src="images/page5/logo5.png" alt="image_one" className="object-cover absolute left-0 top-0" />
                   </div>
+                {/*  <div className="breathing-circle">
+                    <Img src="images/page5/logo5.png" alt="image_one" className="object-cover" />
+                  </div>*/}
                   <Text
                     size="xl"
                     as="p"
