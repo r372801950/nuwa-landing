@@ -22,7 +22,8 @@ export default function PageFive() {
           <div className="flex flex-col gap-[55px] sm:gap-[27px]">
             {/* hero section */}
             <div className="flex gap-[22px] md:flex-col">
-              <div className="flex w-[45%] h-[805px] flex-col items-center gap-12 rounded-[22px] bg-white-A700_01 py-[54px]">
+              {/*<div className="flex w-[45%] h-[805px] flex-col items-center gap-12 rounded-[22px] bg-white-A700_01 py-[54px]">*/}
+              <div className="flex w-[45%] h-[89.5vh] flex-col items-center gap-12 rounded-[22px] bg-white-A700_01 py-[54px]">
                 <div className="flex flex-col items-center self-stretch">
                 {/*  <div className="relative z-[1] flex w-[57%] flex-col items-end justify-end rounded-[160px] bg-yellow-900_7f py-[62px] pl-14 pr-[62px] blur-[200.00px] backdrop-opacity-[0.5] md:w-full md:p-5">
                     <div className="mr-[26px] mt-[82px] flex w-[65%] flex-col items-center rounded-[57px] border-2 border-solid border-white-A700_6d bg-black-900_03 p-[29px] shadow-sm md:mr-0 md:w-full sm:p-5">

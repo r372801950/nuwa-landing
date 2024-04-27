@@ -30,11 +30,6 @@ export default function PageOne() {
         {/* empty view section */}
         <div
           className="absolute bottom-[-377.00px] right-[19.00px] m-auto h-[972px] w-[68%] rounded-[486px] bg-blue_gray-50_01" />
-       {/* <img
-          loading="lazy"
-          src="images/page3/page3bg1.png"
-          className="mt-8 w-full aspect-[1.72] max-md:max-w-full"
-        />*/}
         <div className="absolute bottom-[-5.00px] right-[19.00px] m-auto h-[972px] w-[68%] bg-cover bg-no-repeat"
              style={{
                backgroundImage: "url('/public/images/img_group_903.png')",
