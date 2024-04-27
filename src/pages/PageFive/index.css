@@ -19,7 +19,7 @@
 .breathing-circle {
     width: 350px;
     height: 350px;
-    background: url("images/breathing-circle.png") center;
+    background: url("/public/images/breathing-circle.png") center;
     background-size: cover;
     border-radius: 50%;
     position: relative;

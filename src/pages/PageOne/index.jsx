@@ -32,7 +32,7 @@ export default function PageOne() {
          <div
           className="absolute bottom-[-377.00px] right-[19.00px] m-auto h-[972px] w-[972px] rounded-[50%] bg-blue_gray-50_01">
            <img
-             src="/public/images/img_group_903.png"
+             src="images/img_group_903.png"
              alt="nuwa"
              className="absolute object-cover max-w-[249%] transform scale-200 -translate-x-[21%]  -translate-y-[19%]"
            />
