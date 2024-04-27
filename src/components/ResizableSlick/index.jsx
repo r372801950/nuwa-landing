@@ -25,16 +25,38 @@ function ResizableSlick({ onCurrentSlideChange }) {
     centerPadding: "10px",
     slidesToShow: 3,
     speed: 500,
+    appendDots: dots => (
+      <div
+        style={{
+          borderRadius: "10px",
+          padding: "10px",
+        }}
+      >
+        <ul style={{ marginBottom: "-20px" }}> {dots} </ul>
+      </div>
+    ),
+    customPaging: i => (
+      <div
+        style={{
+          width: "30px",
+          color: "#000000",
+          opacity: 0.5,
+          fontSize: "16px"
+        }}
+      >
+        0{i + 1}
+      </div>
+    ),
     beforeChange: (oldIndex, newIndex) => {
       onCurrentSlideChange(newIndex); // 在滑块动画开始前更新状态
     },
-    customPaging: function(i) {
-      return (
-        <button style={{ width: "20px", height: "20px" }}>
-          {i + 1} {/* 加1因为索引是从0开始 */}
-        </button>
-      );
-    },
+    // customPaging: function(i) {
+    //   return (
+    //     <button style={{ width: "20px", height: "20px" }}>
+    //       {i + 1} {/* 加1因为索引是从0开始 */}
+    //     </button>
+    //   );
+    // },
   };
   return (
     <div className="slider-container">

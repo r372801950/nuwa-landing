@@ -7,6 +7,40 @@
     z-index: 10;
 
 }
+/*!* 给 .slick-dots 容器添加样式 *!*/
+/*.slick-dots {*/
+/*    position: relative; !* 设置为相对定位 *!*/
+/*    display: flex; !* 使用 flex 布局 *!*/
+/*    justify-content: center; !* 居中显示 dots *!*/
+/*    margin-bottom: 20px; !* 适当调整 dots 和下方元素的间距 *!*/
+/*}*/
+
+/*!* 设置每个 dot 的样式 *!*/
+/*.slick-dots li {*/
+/*    position: relative; !* 设置为相对定位 *!*/
+/*    display: inline-block; !* 显示为内联块元素 *!*/
+/*    margin: 0 5px; !* 设置 dots 之间的间距 *!*/
+/*}*/
+
+/*!* 给选中的 dot 添加样式 *!*/
+/*.slick-dots li.slick-active {*/
+/*    font-weight: bold; !* 设置选中的 dot 的样式 *!*/
+/*    padding-left: 100px; !* 添加左侧 padding *!*/
+/*}*/
+
+/*!* 创建 dots 之间的横线 *!*/
+/*.slick-dots li.slick-active::before {*/
+/*    content: ""; !* 添加内容 *!*/
+/*    position: absolute; !* 绝对定位 *!*/
+/*    top: 50%; !* 相对于父元素的中间位置 *!*/
+/*    left: calc(-100px - 5px); !* 计算横线的左侧位置 *!*/
+/*    transform: translateY(-50%); !* 将其居中定位 *!*/
+/*    width: 100px; !* 设置横线宽度 *!*/
+/*    height: 1px; !* 设置横线高度 *!*/
+/*    background-color: black; !* 设置横线颜色 *!*/
+/*}*/
+
+
 /*!* 覆盖slick的默认圆点样式 *!
 .slick-dots li button {
     width: 30px !important; !* 增加按钮的宽度 *!

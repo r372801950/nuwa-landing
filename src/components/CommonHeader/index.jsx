@@ -15,21 +15,22 @@ export default function CommonHeader(){
           <div className="flex w-[38%] items-center justify-between gap-5 md:w-full sm:flex-col">
             <ul className="flex flex-wrap gap-[49px]">
               <li>
-                <a href="#" className="cursor-pointer">
+                <a href="https://create.nuwalabs.org/" target="_blank" className="cursor-pointer">
                   <Heading as="h6" className="text-center hover:text-yellow-800">
                     Creation Platform
                   </Heading>
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <Heading as="h6" className="text-center !text-yellow-800">
+                <a href="https://roleai.nuwalabs.org/" target="_blank" className="cursor-pointer">
+                  {/*<Heading as="h6" className="text-center !text-yellow-800">*/}
+                  <Heading as="h6" className="text-center hover:text-yellow-800">
                     role.ai
                   </Heading>
                 </a>
               </li>
               <li>
-                <a href="#" className="cursor-pointer">
+                <a href="https://docs.nuwalabs.org/" target="_blank" className="cursor-pointer">
                   <Heading as="h6" className="text-center hover:text-yellow-800">
                     BRC-1111{" "}
                   </Heading>
@@ -43,7 +44,8 @@ export default function CommonHeader(){
               </Text>
               <Button
                 variant="fill"
-                className="min-w-[39px] rounded-bl-[12px] rounded-tl-[12px] font-sfpro font-medium tracking-[0.14px]"
+                color="yellow_800"
+                className="min-w-[39px] rounded-br-[12px] rounded-tr-[12px] font-sfpro font-medium tracking-[0.14px]"
               >
                 CN
               </Button>

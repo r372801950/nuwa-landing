@@ -62,45 +62,21 @@ export default function PageTwo() {
           <div className="flex flex-col items-center gap-[43px]">
             <div className="relative flex self-stretch justify-between overflow-auto md:flex-col  h-[304px]">
               <div className="flex w-[35%] items-center gap-4 rounded-r-[152px] bg-yellow-800_19 p-[54px] md:ml-0 md:w-full md:p-5">
-                {/*<div className="flex w-[89%] h-[304px] items-center justify-end gap-[33px]  bg-yellow-800_19 p-[55px] md:w-full md:p-5">*/}
-                  {/*左箭头*/}
-                 {/* <Img
-                    src="images/img_arrow_left_blue_gray_900.svg"
-                    alt="arrowleft_one"
-                    className="mb-[76px] h-[27px] w-[27px] self-end"
-                  />*/}
-                  {/*左侧第一个图片*/}
-                  {/*<Img
-                    src="images/img_4_1.png"
-                    alt="image_one"
-                    className="mb-4 mt-[17px] h-[161px] w-[152px] object-cover"
-                  />*/}
-                {/*</div>*/}
+                <div className="w-[35%] font-sans text-base font-normal leading-6 text-left bg-black">
+                  {slideInfo[currentSlide>1?currentSlide-1:slideInfo.length-1].title}
+                </div>
 
-
-
-                {/*<Img
-                  src="images/img_rectangle.png"
-                  alt="image_two"
-                  className="mb-[67px] h-[154px] w-[153px] self-end object-cover md:w-full"
-                />*/}
               </div>
               <div  className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
                 <ResizableSlick  onCurrentSlideChange={handleSlideChange} />
 
               </div>
-              <div className="flex w-[35%] items-center gap-4 rounded-l-[152px] bg-yellow-800_19 p-[54px] md:ml-0 md:w-full md:p-5">
-                {/*右侧第一个图片
-                <Img
-                  src="images/img_66_1.png"
-                  alt="image_three"
-                  className="mb-[46px] mt-[47px] h-[103px] w-[156px] object-cover"
-                />*/}
-                {/*<Img*/}
-                {/*  src="images/img_arrow_right.svg"*/}
-                {/*  alt="arrowright_one"*/}
-                {/*  className="mb-[77px] h-[27px] w-[27px] self-end"*/}
-                {/*/>*/}
+              <div
+                className="flex justify-end w-[35%] items-center gap-4 rounded-l-[152px] bg-yellow-800_19 p-[54px] md:ml-0 md:w-full md:p-5">
+                <div className="w-[35%] font-sans text-base font-normal leading-6 text-left bg-black">
+                  {slideInfo[currentSlide < slideInfo.length - 1 ? currentSlide + 1 : 0].title}
+                </div>
+
               </div>
             </div>
             <div className="mx-auto flex w-full max-w-[1305px] flex-col items-center md:p-5">
@@ -115,8 +91,8 @@ export default function PageTwo() {
                   <span className="text-[80px] text-black-900_03">&nbsp;</span>
                 </Text>
                 <div className="mb-1.5 flex flex-1 flex-col items-start gap-[134px] md:gap-[100px] md:self-stretch sm:gap-[67px]">
-                  <div className="flex w-[37%] items-center opacity-0.5 md:w-full">
-                    <Text as="p" className="!text-gray-900_05">
+                  <div className="flex w-[37%] h-[24px] items-center opacity-0.5 md:w-full">
+                    {/*<Text as="p" className="!text-gray-900_05">
                       01
                     </Text>
                     <div className="ml-[9px] h-px w-[53%] bg-black-900_03" />
@@ -134,7 +110,7 @@ export default function PageTwo() {
                     </Text>
                     <Text as="p" className="ml-1.5">
                       06
-                    </Text>
+                    </Text>*/}
                   </div>
                   <Heading size="md" as="h1" className="self-end !text-black-900_03">
                     {/*Natural Language Processing (NLP)*/}

@@ -28,14 +28,15 @@ export default function PageOne() {
       {/* main layout section */}
       <div className="relative h-[100vh] w-full bg-indigo-50 overflow-hidden">
         {/* empty view section */}
-        <div
-          className="absolute bottom-[-377.00px] right-[19.00px] m-auto h-[972px] w-[68%] rounded-[486px] bg-blue_gray-50_01" />
-        <div className="absolute bottom-[-5.00px] right-[19.00px] m-auto h-[972px] w-[68%] bg-cover bg-no-repeat"
-             style={{
-               backgroundImage: "url('/public/images/img_group_903.png')",
-               backgroundPosition: "top",
-               backgroundSize: "228%"
-             }} />
+
+         <div
+          className="absolute bottom-[-377.00px] right-[19.00px] m-auto h-[972px] w-[972px] rounded-[50%] bg-blue_gray-50_01">
+           <img
+             src="/public/images/img_group_903.png"
+             alt="nuwa"
+             className="absolute object-cover max-w-[249%] transform scale-200 -translate-x-[21%]  -translate-y-[19%]"
+           />
+         </div>
 
         <div
           className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[100vh] w-full bg-cover bg-no-repeat pt-[45px] md:h-auto md:pt-5"

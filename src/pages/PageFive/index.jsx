@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Img, Text, Button, Heading } from "../../components";
 import Header from "../../components/Header";
-import './index.css'
+import "./index.css";
 import CommonHeader from "../../components/CommonHeader";
 
 export default function PageFive() {
@@ -15,8 +15,9 @@ export default function PageFive() {
           content="Become a part of the vibrant digital life creator community with Nuwa Labs. Learn about the BRC-1111 protocol, contribute to our research, and help forge the era of digital symbiosis."
         />
       </Helmet>
-      <div className="flex w-full flex-col items-center gap-[19px] bg-gradient-to-r from-white-A700 to-gray-200 pt-[45px] shadow-xs md:gap-[507px] md:pt-5 sm:gap-[338px]">
-      {/*<div className="flex w-full flex-col items-center gap-[676px] bg-gradient-to-r from-green-400 to-blue-500 pt-[45px] shadow-xs md:gap-[507px] md:pt-5 sm:gap-[338px]">*/}
+      <div
+        className="flex w-full flex-col items-center gap-[19px] bg-gradient-to-r from-white-A700 to-gray-200 pt-[45px] shadow-xs md:gap-[507px] md:pt-5 sm:gap-[338px]">
+        {/*<div className="flex w-full flex-col items-center gap-[676px] bg-gradient-to-r from-green-400 to-blue-500 pt-[45px] shadow-xs md:gap-[507px] md:pt-5 sm:gap-[338px]">*/}
         <div className="mx-auto flex w-full max-w-[1303px] flex-col gap-9 md:p-5">
           {/* header section */}
           {/*<Header className="flex items-center justify-between gap-5 md:flex-col" />*/}
@@ -25,9 +26,10 @@ export default function PageFive() {
             {/* hero section */}
             <div className="flex gap-[22px] md:flex-col">
               {/*<div className="flex w-[45%] h-[805px] flex-col items-center gap-12 rounded-[22px] bg-white-A700_01 py-[54px]">*/}
-              <div className="flex w-[45%] h-[89.5vh] flex-col items-center gap-12 rounded-[22px] bg-white-A700_01 py-[54px]">
+              <div
+                className="flex w-[45%] h-[89.5vh] flex-col items-center gap-12 rounded-[22px] bg-white-A700_01 py-[54px]">
                 <div className="flex flex-col items-center self-stretch">
-                {/*  <div className="relative z-[1] flex w-[57%] flex-col items-end justify-end rounded-[160px] bg-yellow-900_7f py-[62px] pl-14 pr-[62px] blur-[200.00px] backdrop-opacity-[0.5] md:w-full md:p-5">
+                  {/*  <div className="relative z-[1] flex w-[57%] flex-col items-end justify-end rounded-[160px] bg-yellow-900_7f py-[62px] pl-14 pr-[62px] blur-[200.00px] backdrop-opacity-[0.5] md:w-full md:p-5">
                     <div className="mr-[26px] mt-[82px] flex w-[65%] flex-col items-center rounded-[57px] border-2 border-solid border-white-A700_6d bg-black-900_03 p-[29px] shadow-sm md:mr-0 md:w-full sm:p-5">
                       <Img src="images/page5/logo5.png" alt="image_one" className="h-[55px] w-[51%] object-cover" />
                     </div>
@@ -36,7 +38,7 @@ export default function PageFive() {
                     <div className="breathing-circle"></div>
                     <Img src="images/page5/logo5.png" alt="image_one" className="object-cover absolute left-0 top-0" />
                   </div>
-                {/*  <div className="breathing-circle">
+                  {/*  <div className="breathing-circle">
                     <Img src="images/page5/logo5.png" alt="image_one" className="object-cover" />
                   </div>*/}
                   <Text
@@ -76,14 +78,17 @@ export default function PageFive() {
                       Discover more about the BRC-1111 protocol and other projects at Nüwa Laboratory.
                     </Text>
                     <div className="mt-[144px] flex items-center justify-between gap-5 self-stretch">
-                      <Button
-                        shape="round"
-                        color="gray_900_01"
-                        className="min-w-[194px] sm:px-5"
-                      >
-                        Documentations
-                      </Button>
-                      <Img src="images/page5/emo1.png" alt="image_three" className="h-[80px] w-[80px] img-hover-animate" />
+                      {/*<Button*/}
+                      {/*  shape="round"*/}
+                      {/*  color="gray_900_01"*/}
+                      {/*  className="min-w-[194px] sm:px-5"*/}
+                      {/*>*/}
+                      {/*  Documentations*/}
+                      {/*</Button>*/}
+                      <a href="https://docs.nuwalabs.org/" target="_blank"
+                         className="w-[194px] hover:bg-gray-900_02 hover:text-white-A700_01 text-[12px] h-[37px] border-gray-900_01 border border-solid text-black-900_03 rounded-[18px] flex items-center justify-center text-center cursor-pointer">Documentations</a>
+                      <Img src="images/page5/emo1.png" alt="image_three"
+                           className="h-[80px] w-[80px] img-hover-animate" />
 
                     </div>
                   </div>
@@ -106,7 +111,8 @@ export default function PageFive() {
                       >
                         Donate
                       </Button>
-                      <Img src="images/page5/emo3.png" alt="image_three" className="h-[80px] w-[80px] img-hover-animate" />
+                      <Img src="images/page5/emo3.png" alt="image_three"
+                           className="h-[80px] w-[80px] img-hover-animate" />
                     </div>
                   </div>
                 </div>
@@ -126,7 +132,8 @@ export default function PageFive() {
                       <Button shape="round" color="gray_900_01" className="min-w-[194px] sm:px-5">
                         info@nuwalabs.org
                       </Button>
-                      <Img src="images/page5/emo2.png" alt="image_three" className="h-[80px] w-[80px] img-hover-animate" />
+                      <Img src="images/page5/emo2.png" alt="image_three"
+                           className="h-[80px] w-[80px] img-hover-animate" />
                     </div>
                   </div>
                 </div>
@@ -142,16 +149,25 @@ export default function PageFive() {
                     </div>
                     <div className="mt-[116px] flex items-start gap-[23px]">
                       <div className="flex flex-1 flex-col gap-3.5">
-                        <Button shape="round" color="gray_900_01" className="w-[194px] sm:px-5">
-                          Discord
-                        </Button>
-                        <Button shape="round" color="gray_900_01" className="w-[194px] sm:px-5">
-                          X
-                        </Button>
-                        <Button shape="round" color="gray_900_01" className="w-[194px] sm:px-5">
-                          Telegram
-                        </Button>
-                      </div><Img src="images/page5/emo4.png" alt="image_three" className="mt-[60px] h-[80px] w-[80px] img-hover-animate" />
+                        {/*<Button shape="round" color="gray_900_01" className="w-[194px] sm:px-5">*/}
+                        {/*  Discord*/}
+                        {/*</Button>*/}
+                        {/*<Button shape="round" color="gray_900_01" className="w-[194px] sm:px-5">*/}
+                        {/*  <a href="https://twitter.com/NuwaLabs" target="_blank" className="block">X</a>*/}
+                        {/*</Button>*/}
+                        {/*<Button shape="round" color="gray_900_01" className="w-[194px] sm:px-5">*/}
+                        {/*  Telegram*/}
+                        {/*</Button>*/}
+                        <a href="https://discord.gg/bqMu94HBwz" target="_blank"
+                           className="w-[194px] hover:bg-gray-900_02 hover:text-white-A700_01 text-[12px] h-[37px] border-gray-900_01 border border-solid text-black-900_03 rounded-[18px] flex items-center justify-center text-center cursor-pointer">Discord</a>
+                        <a href="https://twitter.com/NuwaLabs" target="_blank"
+                           className="w-[194px] hover:bg-gray-900_02 hover:text-white-A700_01 text-[12px] h-[37px] border-gray-900_01 border border-solid text-black-900_03 rounded-[18px] flex items-center justify-center text-center cursor-pointer">X</a>
+                        <a href="https://t.me/nuwa_labs" target="_blank"
+                           className="w-[194px] hover:bg-gray-900_02 hover:text-white-A700_01 text-[12px] h-[37px] border-gray-900_01 border border-solid text-black-900_03 rounded-[18px] flex items-center justify-center text-center cursor-pointer">Telegram</a>
+
+                      </div>
+                      <Img src="images/page5/emo4.png" alt="image_three"
+                           className="mt-[60px] h-[80px] w-[80px] img-hover-animate" />
                       {/*<Img src="images/img__gray_900_112x85.svg" alt="image_five" className="h-[112px] w-[30%]" />*/}
                     </div>
                   </div>
