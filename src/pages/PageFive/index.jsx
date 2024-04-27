@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Img, Text, Button, Heading } from "../../components";
 import Header from "../../components/Header";
 import './index.css'
+import CommonHeader from "../../components/CommonHeader";
 
 export default function PageFive() {
   return (
@@ -18,7 +19,8 @@ export default function PageFive() {
       {/*<div className="flex w-full flex-col items-center gap-[676px] bg-gradient-to-r from-green-400 to-blue-500 pt-[45px] shadow-xs md:gap-[507px] md:pt-5 sm:gap-[338px]">*/}
         <div className="mx-auto flex w-full max-w-[1303px] flex-col gap-9 md:p-5">
           {/* header section */}
-          <Header className="flex items-center justify-between gap-5 md:flex-col" />
+          {/*<Header className="flex items-center justify-between gap-5 md:flex-col" />*/}
+          <CommonHeader />
           <div className="flex flex-col gap-[55px] sm:gap-[27px]">
             {/* hero section */}
             <div className="flex gap-[22px] md:flex-col">
@@ -158,7 +160,7 @@ export default function PageFive() {
             </div>
 
             {/* footer section */}
-            <div className="flex w-[96%] flex-col items-start gap-[19px] md:w-full">
+            <div className="flex w-[96%] flex-col items-start gap-[19px] md:w-full pb-[19px]">
               {/* about section */}
               <div className="flex items-start justify-between gap-5 self-stretch md:flex-col">
                 <div className="flex w-[57%] items-start justify-between gap-5 md:w-full md:flex-col">

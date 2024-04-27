@@ -102,12 +102,6 @@ const VerticalMode = () => {
     cssEase: "linear",
     prevArrow: <CustomArrow direction="left" />,
     nextArrow: <CustomArrow direction="right" />,
-    beforeChange: function(currentSlide, nextSlide) {
-      console.log("before change", currentSlide, nextSlide);
-    },
-    afterChange: function(currentSlide) {
-      console.log("after change", currentSlide);
-    }
   };
   return (
     <>

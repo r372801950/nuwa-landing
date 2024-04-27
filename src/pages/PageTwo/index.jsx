@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Img, Text, Heading } from "../../components";
 import Header from "../../components/Header";
 import ResizableSlick from "../../components/ResizableSlick";
+import CommonHeader from "../../components/CommonHeader";
 
 const slideInfo=[
   {
@@ -55,7 +56,7 @@ export default function PageTwo() {
       </Helmet>
       <div className="flex w-full h-[100vh] flex-col items-center gap-[107px] bg-gray-100 pt-[45px] shadow-xs md:gap-20 md:pt-5 sm:gap-[53px]">
         {/* header section */}
-        <Header className="mx-auto flex w-full max-w-[1301px] items-center justify-between gap-5 md:flex-col md:p-5" />
+        <CommonHeader />
         <div className="flex flex-col overflow-hidden justify-center gap-[726px] self-stretch md:gap-[544px] md:pb-5 sm:gap-[363px]">
           {/* main content section */}
           <div className="flex flex-col items-center gap-[43px]">
