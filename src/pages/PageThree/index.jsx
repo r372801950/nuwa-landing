@@ -20,12 +20,12 @@ export default function PageFour() {
 
 
         <div
-          className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[100vh] w-full bg-cover bg-no-repeat pt-[45px] md:h-auto md:pt-5"
+          className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[100vh] w-full bg-cover bg-no-repeat pt-[95px] md:h-auto md:pt-5"
         >
           {/* hero section */}
           <div className="flex flex-col items-center">
             {/* navigation menu section */}
-            <CommonHeader />
+            {/*<CommonHeader />*/}
 
             {/* image gallery section */}
             <div className="marquee w-[178%] fixed left-0 bottom-0 flex min-w-full overflow-hidden whitespace-nowrap">

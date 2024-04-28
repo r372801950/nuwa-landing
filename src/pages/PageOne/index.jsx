@@ -39,12 +39,12 @@ export default function PageOne() {
          </div>
 
         <div
-          className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[100vh] w-full bg-cover bg-no-repeat pt-[45px] md:h-auto md:pt-5"
+          className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[100vh] w-full bg-cover bg-no-repeat pt-[95px] md:h-auto md:pt-5"
         >
           {/* hero section */}
           <div className="flex flex-col items-center">
-            {/* navigation menu section */}
-            <CommonHeader />
+
+            {/*<CommonHeader />*/}
 
             {/* headline section */}
             <div className="mx-auto mt-[60px] w-full max-w-[1308px] md:p-5">

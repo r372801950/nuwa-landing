@@ -21,7 +21,8 @@ export default function PageFive() {
         <div className="mx-auto flex w-full max-w-[1303px] flex-col gap-9 md:p-5">
           {/* header section */}
           {/*<Header className="flex items-center justify-between gap-5 md:flex-col" />*/}
-          <CommonHeader />
+          {/*<CommonHeader />*/}
+          <div className="h-[50px]"></div>
           <div className="flex flex-col gap-[55px] sm:gap-[27px]">
             {/* hero section */}
             <div className="flex gap-[22px] md:flex-col">

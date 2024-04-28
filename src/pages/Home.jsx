@@ -4,6 +4,7 @@ import PageTwo from "pages/PageTwo";
 import PageFour from "pages/PageFour";
 import PageThree from "pages/PageThree";
 import PageFive from "pages/PageFive";
+import CommonHeader from "../components/CommonHeader";
 
 const Home = () => {
 
@@ -45,6 +46,9 @@ const Home = () => {
 
   return (
     <div className="fixed inset-0 overflow-hidden" onWheel={handleWheel}>
+      <div className="w-full fixed top-[45px] left-0 z-10 items-center">
+        <CommonHeader />
+      </div>
       <div className="transition-transform duration-500 ease-in-out"
            style={{ transform: `translateY(-${currentPage * 100}vh)` }}>
         {pages.map((page, index) => (

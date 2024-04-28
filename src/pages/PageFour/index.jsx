@@ -1,9 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { Img, Text, Heading, Button } from "../../components";
-import Header from "../../components/Header";
 import CommonHeader from "../../components/CommonHeader";
-import LaboratorySlick from "../PageThree/LaboratorySlick";
 import './index.css'
 
 export default function PageThree() {
@@ -19,7 +16,8 @@ export default function PageThree() {
 
       {/* main layout section */}
       <div className="relative h-[100vh] w-full bg-gradient pr-[31px] pt-[31px] shadow-xs sm:pr-5 sm:pt-5 page4 overflow-hidden">
-        <CommonHeader />
+        {/*<CommonHeader />*/}
+        <div></div>
 
         <div>
           <div className="absolute !font-pangmenzhengdao title4">
