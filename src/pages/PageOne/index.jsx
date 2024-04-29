@@ -2,20 +2,11 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import { Img, Text, Button, Heading } from "../../components";
 import TypewriterText from "../../components/TypewriterText";
-// import BottomSlick from "../../components/BottomSlick";
-// import CommonHeader from "../../components/CommonHeader";
 import ContinuousMarquee from "../../components/ContinuousMarquee";
+import TypingEffect from "../../components/TypingEffect";
 // import TextDisplay from "../../components/TextDisplay";
 const arr=[['#work for us'],['{being a good accompany}'],['{being everywhere}'],['{unprecedented creativity}'],['{true freedom}'],['Reshape','{human civilization}'],['Reshape','{human lifestyle}'],['Reshape','EVERYTHING.']]
 export default function PageOne() {
-  const [currentLineIndex, setCurrentLineIndex] = useState(0);
-
-  const handleAnimationComplete = () => {
-    // 在动画完成后调用，准备显示下一行
-    if (currentLineIndex < arr.length - 1) {
-      setCurrentLineIndex(currentLineIndex + 1);
-    }
-  };
   return (
     <>
       <Helmet>
@@ -44,11 +35,9 @@ export default function PageOne() {
           {/* hero section */}
           <div className="flex flex-col items-center">
 
-            {/*<CommonHeader />*/}
-
             {/* headline section */}
             <div className="mx-auto mt-[60px] w-full max-w-[1308px] md:p-5">
-              <Text size="5xl" as="p" className="!font-pangmenzhengdao !text-white-A700">
+              <Text size="5xl" as="p" className="!font-pangmenzhengdao text-[#333333]">
                 <>
                   DIGITAL <br />
                   LIFE...
@@ -59,19 +48,16 @@ export default function PageOne() {
             <div className="mx-auto w-full max-w-[1308px] md:p-5">
 
               {/* 只渲染当前活跃的行 */}
-              <TypewriterText
-                lines={arr[currentLineIndex]}
-                onFinishedTyping={handleAnimationComplete}
-              />
-
-              {/*<TypewriterText lines={['Reshape2','human civilization2']} />*/}
-              {/*<TextDisplay lines={[['Reshape','human civilization'],'Reshape2','human civilization2']} speed={200} />*/}
+              {/*<TypewriterText*/}
+              {/*  lines={arr[currentLineIndex]}*/}
+              {/*  onFinishedTyping={handleAnimationComplete}*/}
+              {/*/>*/}
+              <TypingEffect />
 
             </div>
 
             {/* image gallery section */}
             {/*<div className="bg-[#fff] absolute left-[-1px] bottom-0 flex h-[128px] items-center">*/}
-            {/*  /!*<BottomSlick />*!/*/}
             {/*</div>*/}
             <div className="bg-[#fff] absolute left-0 bottom-0 h-[128px] flex items-center">
               <ContinuousMarquee></ContinuousMarquee>
