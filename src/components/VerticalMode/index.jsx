@@ -93,8 +93,6 @@ const VerticalMode = () => {
     dots: true,
     infinite: true,
     slidesToScroll: 1,
-    vertical: true,
-    verticalSwiping: true,
     swipeToSlide: true,
     autoplay: true,
     speed: 500,

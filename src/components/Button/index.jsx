@@ -13,6 +13,7 @@ const variants = {
   fill: {
     gray_900: "bg-gray-900 text-white-A700_01",
     yellow_800: "bg-yellow-800 text-white-A700_01",
+    blue_gray: "transparent text-blue_gray-900_02",
   },
 };
 const sizes = {
@@ -52,7 +53,7 @@ Button.propTypes = {
   shape: PropTypes.oneOf(["round"]),
   size: PropTypes.oneOf(["md", "sm", "xs"]),
   variant: PropTypes.oneOf(["outline", "fill"]),
-  color: PropTypes.oneOf(["black_900_03", "gray_900_02", "gray_900_01", "gray_900", "yellow_800"]),
+  color: PropTypes.oneOf(["black_900_03", "gray_900_02", "gray_900_01", "gray_900", "yellow_800", "blue_gray"]),
 };
 
 export { Button };

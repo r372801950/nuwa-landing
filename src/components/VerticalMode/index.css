@@ -1,8 +1,8 @@
 .verticalMode .slick-dots{
-    left: 68px;
-    bottom: 62%;
-    /*transform: translateY(50%);*/
+    right: 8%;
+    bottom: 8%;
+    text-align: right;
 }
-.verticalMode .slick-dots li{
-    display: block;
+.verticalMode .slick-dots li button:before{
+    font-size: 10px;
 }

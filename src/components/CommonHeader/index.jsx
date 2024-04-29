@@ -38,17 +38,24 @@ export default function CommonHeader(){
               </li>
             </ul>
             <div
-              className="flex items-center gap-2 rounded-[12px] border border-solid border-blue_gray-100_01 pl-3">
-              <Text size="s" as="p" className="h-[17px] !font-sfpro tracking-[0.14px] !text-blue_gray-900_02">
-                EN
-              </Text>
+              className="flex items-center rounded-[12px] border border-solid border-blue_gray-100_01">
               <Button
                 variant="fill"
                 color="yellow_800"
+                className="min-w-[39px] rounded-bl-[12px] rounded-tl-[12px] font-sfpro font-medium tracking-[0.14px] pl-3"
+              >
+                EN
+              </Button>
+              <Button
+                variant="fill"
+                color="blue_gray"
                 className="min-w-[39px] rounded-br-[12px] rounded-tr-[12px] font-sfpro font-medium tracking-[0.14px]"
               >
                 CN
               </Button>
+              {/*<Text size="s" as="p" className="h-[17px] !font-sfpro tracking-[0.14px] !text-blue_gray-900_02">
+                CN
+              </Text>*/}
             </div>
           </div>
         </div>

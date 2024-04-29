@@ -25,6 +25,7 @@ export default function PageThree() {
             Life Labs
           </div>
           <div className="absolute info4">
+            <p>—</p>
             <p>
               Dedicate into the global open source community.
               Progressive decentralization practitioner.
