@@ -8,7 +8,7 @@ function ContinuousMarquee() {
       delay={1}
       pauseOnHover={true}
       gradient={false} // 关闭两端的渐变效果
-      speed={600} // 控制滚动的速度
+      speed={300} // 控制滚动的速度
       play={true}
       style={{ width: 2400 }} // 两组图片2454，小于这个值就不会断层
     >

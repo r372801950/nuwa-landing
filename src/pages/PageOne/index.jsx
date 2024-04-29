@@ -29,13 +29,12 @@ export default function PageOne() {
       {/* main layout section */}
       <div className="relative h-[100vh] w-full bg-indigo-50 overflow-hidden">
         {/* empty view section */}
-
          <div
-          className="absolute bottom-[-377.00px] right-[19.00px] m-auto h-[972px] w-[972px] rounded-[50%] bg-blue_gray-50_01">
+          className="absolute bottom-0 right-[20.00px] h-[595px] w-[972px] bg-cover" style={{backgroundImage:"url('images/page1/half.png')"}}>
            <img
-             src="images/img_group_903.png"
+             src="images/page1/Mask.png"
              alt="nuwa"
-             className="absolute object-cover max-w-[249%] transform scale-200 -translate-x-[21%]  -translate-y-[19%]"
+             className="absolute object-cover w-full transform -translate-y-[23%]"
            />
          </div>
 
