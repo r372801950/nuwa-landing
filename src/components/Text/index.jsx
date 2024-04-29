@@ -3,6 +3,7 @@ import React from "react";
 const sizes = {
   "5xl": "text-[110px] font-normal md:text-5xl",
   xs: "text-[10px] font-normal",
+  xss: "text-[12px] font-normal",
   lg: "text-xl font-normal",
   s: "text-sm font-medium",
   "2xl": "text-6xl font-normal md:text-[52px] sm:text-[46px]",

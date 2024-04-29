@@ -30,11 +30,6 @@ export default function PageFive() {
               <div
                 className="flex w-[45%] h-[89.5vh] flex-col items-center gap-12 rounded-[22px] bg-white-A700_01 py-[54px]">
                 <div className="flex flex-col items-center self-stretch">
-                  {/*  <div className="relative z-[1] flex w-[57%] flex-col items-end justify-end rounded-[160px] bg-yellow-900_7f py-[62px] pl-14 pr-[62px] blur-[200.00px] backdrop-opacity-[0.5] md:w-full md:p-5">
-                    <div className="mr-[26px] mt-[82px] flex w-[65%] flex-col items-center rounded-[57px] border-2 border-solid border-white-A700_6d bg-black-900_03 p-[29px] shadow-sm md:mr-0 md:w-full sm:p-5">
-                      <Img src="images/page5/logo5.png" alt="image_one" className="h-[55px] w-[51%] object-cover" />
-                    </div>
-                  </div>*/}
                   <div className="breathing-box relative">
                     <div className="breathing-circle"></div>
                     <Img src="images/page5/logo5.png" alt="image_one" className="object-cover absolute left-0 top-0" />
@@ -59,7 +54,7 @@ export default function PageFive() {
                 <Text
                   size="lg"
                   as="p"
-                  className="mb-[179px] w-[62%] text-center leading-[30px] !text-gray-600_01 md:w-full md:p-5"
+                  className="mb-[179px] text-center leading-[30px] !text-gray-600_01 md:w-full md:p-5"
                 >
                   <>
                     Join the vibrant community of digital life creators to
@@ -181,26 +176,26 @@ export default function PageFive() {
               {/* about section */}
               <div className="flex items-start justify-between gap-5 self-stretch md:flex-col">
                 <div className="flex w-[57%] items-start justify-between gap-5 md:w-full md:flex-col">
-                  <div className="flex w-[16%] flex-col items-center gap-2.5 md:w-full">
-                    <Img src="images/img_group_35511.png" alt="image_six" className="h-[50px] w-[23%] object-cover" />
+                  <div className="flex w-[9%] flex-col items-center gap-2.5 md:w-full">
+                    <Img src="images/img_group_35511.png" alt="image_six" className="w-[25%] object-cover" />
                     <Img
                       src="images/img_group_35512.png"
                       alt="image_seven"
-                      className="h-[20px] w-full object-cover md:h-auto"
+                      className="w-full object-cover md:h-auto"
                     />
                   </div>
-                  <div className="flex w-[79%] flex-col items-start md:w-full">
-                    <Heading size="md" as="h6" className="text-center !text-gray-900_02">
+                  <div className="flex w-[88%] flex-col items-start md:w-full">
+                    <Heading size="xx" as="h6" className="text-center !text-gray-900_02">
                       Nüwa Digital Life Laboratory
                     </Heading>
-                    <Text as="p" className="!text-gray-800_99">
+                    <Text size="xs" as="p" className="!text-gray-800_99">
                       A non-profit organization dedicated to research on digital life. Through interdisciplinary
                       research and social collaboration, we aim to advance digital life in creating value for humanity
                       and benefiting society.
                     </Text>
                   </div>
                 </div>
-                <div className="mt-8 flex gap-[18px]">
+                <div className="mt-4 flex gap-[18px]">
                   <Button size="sm" color="gray_900_01" className="w-[39px] rounded-[7px]">
                     <Img src="images/img_airplane.svg" />
                   </Button>
@@ -216,11 +211,10 @@ export default function PageFive() {
                 </div>
               </div>
               <div className="h-px self-stretch bg-black-900_99" />
-              <div className="flex items-start">
+              <div className="flex items-start items-center">
                 <Img src="images/img_copyleft_2.svg" alt="copylefttwo_one" className="mt-0.5 h-[15px] w-[15px]" />
-                <Text as="p" className="!font-pingfangtc !text-gray-900_05">
-                  <span className="text-gray-900_05">Copyleft 2024&nbsp;</span>
-                  <span className="font-semibold text-gray-900_05">Nüwa Digital Life Laboratory</span>
+                <Text size="xss" as="p" className="!font-pingfangtc !text-gray-900_05">
+                  <span className="text-[#9F9F9F]">&nbsp;Copyleft 2024&nbsp;No Rights Reserved</span>
                 </Text>
               </div>
             </div>

@@ -15,7 +15,7 @@ export default function PageThree() {
       </Helmet>
 
       {/* main layout section */}
-      <div className="relative h-[100vh] w-full bg-gradient pr-[31px] pt-[31px] shadow-xs sm:pr-5 sm:pt-5 page4 overflow-hidden">
+      <div className="relative h-[100vh] w-full page4 overflow-hidden object-cover ">
         {/*<CommonHeader />*/}
         <div></div>
 
@@ -25,7 +25,7 @@ export default function PageThree() {
             Life Labs
           </div>
           <div className="absolute info4">
-            <p>—</p>
+            <span>—</span>
             <p>
               Dedicate into the global open source community.
               Progressive decentralization practitioner.
