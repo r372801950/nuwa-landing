@@ -30,7 +30,7 @@ export default function PageOne() {
       <div className="relative h-[100vh] w-full bg-indigo-50 overflow-hidden">
         {/* empty view section */}
          <div
-          className="absolute bottom-0 right-[20.00px] h-[595px] w-[972px] bg-cover" style={{backgroundImage:"url('images/page1/half.png')"}}>
+          className="absolute bottom-0 right-[20.00px] h-[66%] w-[67.5%] bg-cover" style={{backgroundImage:"url('images/page1/half.png')"}}>
            <img
              src="images/page1/Mask.png"
              alt="nuwa"
