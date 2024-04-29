@@ -74,7 +74,7 @@ export default function PageOne() {
             {/*<div className="bg-[#fff] absolute left-[-1px] bottom-0 flex h-[128px] items-center">*/}
             {/*  /!*<BottomSlick />*!/*/}
             {/*</div>*/}
-            <div className="bg-[#fff] absolute left-[0px] bottom-0 h-[128px] flex items-center">
+            <div className="bg-[#fff] absolute left-0 bottom-0 h-[128px] flex items-center">
               <ContinuousMarquee></ContinuousMarquee>
             </div>
 
