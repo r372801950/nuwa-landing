@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import { Img, Text, Button, Heading } from "../../components";
 import TypewriterText from "../../components/TypewriterText";
-import BottomSlick from "../../components/BottomSlick";
-import CommonHeader from "../../components/CommonHeader";
+// import BottomSlick from "../../components/BottomSlick";
+// import CommonHeader from "../../components/CommonHeader";
+import ContinuousMarquee from "../../components/ContinuousMarquee";
 // import TextDisplay from "../../components/TextDisplay";
 const arr=[['#work for us'],['{being a good accompany}'],['{being everywhere}'],['{unprecedented creativity}'],['{true freedom}'],['Reshape','{human civilization}'],['Reshape','{human lifestyle}'],['Reshape','EVERYTHING.']]
 export default function PageOne() {
@@ -70,8 +71,11 @@ export default function PageOne() {
             </div>
 
             {/* image gallery section */}
-            <div className="bg-[#fff] absolute left-[-1px] bottom-0 flex h-[128px] items-center">
-              <BottomSlick />
+            {/*<div className="bg-[#fff] absolute left-[-1px] bottom-0 flex h-[128px] items-center">*/}
+            {/*  /!*<BottomSlick />*!/*/}
+            {/*</div>*/}
+            <div className="bg-[#fff] absolute left-[0px] bottom-0 h-[128px] flex items-center">
+              <ContinuousMarquee></ContinuousMarquee>
             </div>
 
           </div>
