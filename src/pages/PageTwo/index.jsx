@@ -64,7 +64,7 @@ export default function PageTwo() {
             <div className="relative flex self-stretch justify-between overflow-auto md:flex-col  h-[304px]">
               <div className="flex w-[35%] items-center gap-4 rounded-r-[152px] bg-yellow-800_19 p-[54px] md:ml-0 md:w-full md:p-5">
                 <div className="w-[35%] font-sans text-base font-normal leading-6 text-left bg-black">
-                  {slideInfo[currentSlide>1?currentSlide-1:slideInfo.length-1].title}
+                  {slideInfo[currentSlide>0?currentSlide-1:slideInfo.length-1].title}
                 </div>
 
               </div>

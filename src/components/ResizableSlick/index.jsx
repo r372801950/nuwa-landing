@@ -7,16 +7,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "./sliderStyles.css";
 
 function ResizableSlick({ onCurrentSlideChange }) {
+
+  const [current, setCurrent] = useState(0);
   const [display, setDisplay] = useState(true);
-  const [width, setWidth] = useState(600);
-/*
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-  };*/
   const settings = {
     dots: true,
     className: "center",
@@ -39,9 +32,11 @@ function ResizableSlick({ onCurrentSlideChange }) {
       <div
         style={{
           width: "30px",
-          color: "#000000",
-          opacity: 0.5,
-          fontSize: "16px"
+          color:  i === current ? "#1C1C1C" : "#000000",
+          opacity: i === current ? 1 : 0.5,
+          fontSize: "16px",
+          textAlign: "center",
+          cursor: "pointer" // 添加指针样式
         }}
       >
         0{i + 1}
@@ -49,6 +44,7 @@ function ResizableSlick({ onCurrentSlideChange }) {
     ),
     beforeChange: (oldIndex, newIndex) => {
       onCurrentSlideChange(newIndex); // 在滑块动画开始前更新状态
+      setCurrent(newIndex)
     },
     // customPaging: function(i) {
     //   return (

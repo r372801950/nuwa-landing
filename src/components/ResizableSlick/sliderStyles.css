@@ -7,6 +7,12 @@
     z-index: 10;
 
 }
+.slick-prev, .slick-next {
+    transform: translate(0, -80%);
+}
+.slick-prev:before, .slick-next:before{
+    font-size: 34px;
+}
 /*!* 给 .slick-dots 容器添加样式 *!*/
 /*.slick-dots {*/
 /*    position: relative; !* 设置为相对定位 *!*/
