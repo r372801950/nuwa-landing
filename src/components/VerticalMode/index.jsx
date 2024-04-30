@@ -95,6 +95,7 @@ const VerticalMode = () => {
     slidesToScroll: 1,
     swipeToSlide: true,
     autoplay: true,
+    pauseOnHover: false,
     speed: 500,
     autoplaySpeed: 3000,
     cssEase: "linear",
