@@ -5,6 +5,7 @@ import TypewriterText from "../../components/TypewriterText";
 import ContinuousMarquee from "../../components/ContinuousMarquee";
 import TypingEffect from "../../components/TypingEffect";
 // import TextDisplay from "../../components/TextDisplay";
+import './index.css'
 const arr=[['#work for us'],['{being a good accompany}'],['{being everywhere}'],['{unprecedented creativity}'],['{true freedom}'],['Reshape','{human civilization}'],['Reshape','{human lifestyle}'],['Reshape','EVERYTHING.']]
 export default function PageOne() {
   return (
@@ -20,14 +21,30 @@ export default function PageOne() {
       {/* main layout section */}
       <div className="relative h-[100vh] w-full bg-indigo-50 overflow-hidden">
         {/* empty view section */}
-         <div
+        <div
           className="absolute bottom-0 right-[20.00px] h-[66%] w-[67.5%] bg-cover" style={{backgroundImage:"url('images/page1/half.png')"}}>
            <img
              src="images/page1/Mask.png"
              alt="nuwa"
-             className="absolute object-cover w-full transform -translate-y-[23%]"
+             className="absolute object-cover w-full transform shake"
            />
-         </div>
+        </div>
+
+        {/*<div
+          className="absolute bottom-0 right-[20.00px] h-[66%] w-[67.5%] bg-cover"
+          style={{
+            backgroundImage: "url('images/page1/half.png')",
+          }}
+        >
+          <img
+            src="images/page1/Mask.png"
+            alt="nuwa"
+            className="absolute object-cover w-full transform -translate-y-[23%]"
+            style={{
+              animation: "shake 2.5s ease infinite", // 使用名为 shake 的动画，持续时间为0.5秒，无限循环
+            }}
+          />
+        </div>*/}
 
         <div
           className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[100vh] w-full bg-cover bg-no-repeat pt-[95px] md:h-auto md:pt-5"

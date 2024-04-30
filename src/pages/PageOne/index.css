@@ -1,0 +1,15 @@
+.shake {
+    animation: shake 3s ease infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(-1deg) translateY(-23%);
+    }
+    50% {
+        transform: rotate(1deg) translateY(-23%);
+    }
+    100% {
+        transform: rotate(-1deg) translateY(-23%);
+    }
+}
