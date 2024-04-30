@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import PageOne from "pages/PageOne";
 import PageTwo from "pages/PageTwo";
 import PageFour from "pages/PageFour";
@@ -19,12 +19,20 @@ const Home = () => {
   ];
 
   const fifthPageContainerRef = useRef(null);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(true);
 
   // 结合节流和防抖，设置节流的时间间隔为100毫秒，防抖的延迟为300毫秒
   const handleWheelThrottled = throttle((e) => {
     const isScrollingUp = e.deltaY < 0;
     const isScrollingDown = e.deltaY > 0;
     const isLastPage = currentPage === pages.length - 1;
+
+
+    if (isLastPage) {//监听滚动
+      const { scrollTop } = fifthPageContainerRef.current;
+      console.log("第五页滚动位置2222：", scrollTop);
+      setIsHeaderVisible(scrollTop <= 24)
+    }
 
     if (isLastPage && isScrollingUp) {
       const { scrollTop } = fifthPageContainerRef.current;
@@ -47,13 +55,13 @@ const Home = () => {
   return (
     <div className="fixed inset-0 overflow-hidden" onWheel={handleWheelDebounced}>
       <div className="w-full fixed top-[45px] left-0 z-10 items-center">
-        <CommonHeader />
+        {isHeaderVisible?<CommonHeader />:null}
       </div>
       <div className="transition-transform duration-500 ease-in-out"
            style={{ transform: `translateY(-${currentPage * 100}vh)` }}>
         {pages.map((page, index) => (
           <div key={index} className="w-full h-screen flex justify-center items-center text-4xl">
-            {index === 4 ? (
+            {index === pages.length-1 ? (//最后一页
               <div ref={fifthPageContainerRef} className="w-full h-full overflow-y-auto">
                 {page}
               </div>
