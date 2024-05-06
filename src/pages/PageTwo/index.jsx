@@ -48,7 +48,7 @@ export default function PageTwo() {
   return (
     <>
       <Helmet>
-        <title>Research Focus in NLP - Role.ai</title>
+        <title>Nuwa Digital Life Labs</title>
         <meta
           name="description"
           content="Dive into advanced NLP research at Role.ai. Explore our focus on text understanding, generation, and intelligent dialogue technologies."

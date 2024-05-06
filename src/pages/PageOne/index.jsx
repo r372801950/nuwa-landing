@@ -11,7 +11,7 @@ export default function PageOne() {
   return (
     <>
       <Helmet>
-        <title>Creation Platform - Nuwa Digital Life Labs</title>
+        <title>Nuwa Digital Life Labs</title>
         <meta
           name="description"
           content="Explore the Nuwa Digital Life Labs Creation Platform. A hub for innovation in digital life and technology integration."

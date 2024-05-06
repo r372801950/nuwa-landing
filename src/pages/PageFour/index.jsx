@@ -7,7 +7,7 @@ export default function PageThree() {
   return (
     <>
       <Helmet>
-        <title>Gaming Projects - Digital Life Integration</title>
+        <title>Nuwa Digital Life Labs</title>
         <meta
           name="description"
           content="Discover Digital Life Game Builder for seamless integration of digital life into your games. Simplify your game development with our APIs."

@@ -4,12 +4,44 @@ import { Img, Text, Button, Heading } from "../../components";
 import Header from "../../components/Header";
 import "./index.css";
 import CommonHeader from "../../components/CommonHeader";
+import { message } from "antd";
 
 export default function PageFive() {
+  const [messageApi, contextHolder] = message.useMessage();
+
+  const copyText = async () => {
+    try {
+      await navigator.clipboard.writeText("GmpP4ZYBN9NCEwmxtvs5QWxMFnQKjeAJx8XXoBsqrhPS");  // 需要复制的内容
+      messageApi.open({
+        type: 'success',
+        content: 'Wallet address copied to clipboard!',  // 成功时的提示消息
+      });
+    } catch (error) {
+      messageApi.open({
+        type: 'error',
+        content: 'Failed to copy Wallet address! Try Again',  // 复制失败时的提示消息
+      });
+    }
+  };
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText("info@nuwalabs.org");  // 需要复制的内容
+      messageApi.open({
+        type: 'success',
+        content: 'Email info@nuwalabs.org copied to clipboard!',  // 成功时的提示消息
+      });
+    } catch (error) {
+      messageApi.open({
+        type: 'error',
+        content: 'Failed to copy Email! Try Again',  // 复制失败时的提示消息
+      });
+    }
+  };
   return (
     <>
+      {contextHolder}
       <Helmet>
-        <title>Join the Community - Collaborate with Nuwa Labs</title>
+        <title>Nuwa Digital Life Labs</title>
         <meta
           name="description"
           content="Become a part of the vibrant digital life creator community with Nuwa Labs. Learn about the BRC-1111 protocol, contribute to our research, and help forge the era of digital symbiosis."
@@ -74,13 +106,6 @@ export default function PageFive() {
                       Discover more about the BRC-1111 protocol and other projects at Nüwa Laboratory.
                     </Text>
                     <div className="mt-[144px] flex items-center justify-between gap-5 self-stretch">
-                      {/*<Button*/}
-                      {/*  shape="round"*/}
-                      {/*  color="gray_900_01"*/}
-                      {/*  className="min-w-[194px] sm:px-5"*/}
-                      {/*>*/}
-                      {/*  Documentations*/}
-                      {/*</Button>*/}
                       <a href="https://docs.nuwalabs.org/" target="_blank"
                          className="w-[194px] hover:bg-gray-900_02 hover:text-white-A700_01 text-[12px] h-[37px] border-gray-900_01 border border-solid text-black-900_03 rounded-[18px] flex items-center justify-center text-center cursor-pointer">Documentations</a>
                       <Img src="images/page5/emo1.png" alt="image_three"
@@ -100,13 +125,8 @@ export default function PageFive() {
                       </Text>
                     </div>
                     <div className="flex items-center gap-[23px]">
-                      <Button
-                        shape="round"
-                        color="gray_900_01"
-                        className="min-w-[194px] !text-black-900_01 sm:px-5"
-                      >
-                        Donate
-                      </Button>
+                      <a onClick={copyText}
+                         className="w-[194px] hover:bg-gray-900_02 hover:text-white-A700_01 text-[12px] h-[37px] border-gray-900_01 border border-solid text-black-900_03 rounded-[18px] flex items-center justify-center text-center cursor-pointer">Documentations</a>
                       <Img src="images/page5/emo3.png" alt="image_three"
                            className="h-[80px] w-[80px] img-hover-animate" />
                     </div>
@@ -117,7 +137,7 @@ export default function PageFive() {
               {/* community section */}
               <div className="flex flex-1 flex-col gap-[18px] md:self-stretch">
                 <div className="flex flex-col items-center rounded-[22px] bg-white-A700_01 img-father pb-3.5">
-                  <div className="mt-7 flex w-[87%] flex-col items-start md:w-full md:p-5">
+                <div className="mt-7 flex w-[87%] flex-col items-start md:w-full md:p-5">
                     <Heading size="lg" as="h3" className="!text-gray-900">
                       Join us
                     </Heading>
@@ -145,15 +165,6 @@ export default function PageFive() {
                     </div>
                     <div className="mt-[116px] flex items-start gap-[23px]">
                       <div className="flex flex-1 flex-col gap-3.5">
-                        {/*<Button shape="round" color="gray_900_01" className="w-[194px] sm:px-5">*/}
-                        {/*  Discord*/}
-                        {/*</Button>*/}
-                        {/*<Button shape="round" color="gray_900_01" className="w-[194px] sm:px-5">*/}
-                        {/*  <a href="https://twitter.com/NuwaLabs" target="_blank" className="block">X</a>*/}
-                        {/*</Button>*/}
-                        {/*<Button shape="round" color="gray_900_01" className="w-[194px] sm:px-5">*/}
-                        {/*  Telegram*/}
-                        {/*</Button>*/}
                         <a href="https://discord.gg/bqMu94HBwz" target="_blank"
                            className="w-[194px] hover:bg-gray-900_02 hover:text-white-A700_01 text-[12px] h-[37px] border-gray-900_01 border border-solid text-black-900_03 rounded-[18px] flex items-center justify-center text-center cursor-pointer">Discord</a>
                         <a href="https://twitter.com/NuwaLabs" target="_blank"
@@ -196,16 +207,22 @@ export default function PageFive() {
                   </div>
                 </div>
                 <div className="mt-4 flex gap-[18px]">
-                  <Button size="sm" color="gray_900_01" className="w-[39px] rounded-[7px]">
-                    <Img src="images/img_airplane.svg" />
-                  </Button>
-                  <Button size="sm" color="gray_900_01" className="w-[38px] rounded-[7px]">
-                    <Img src="images/img_save.svg" />
-                  </Button>
-                  <Button size="sm" color="gray_900_01" className="w-[39px] rounded-[7px]">
-                    <Img src="images/img_user.svg" />
-                  </Button>
-                  <Button size="sm" color="gray_900_01" className="w-[38px] rounded-[7px]">
+                  <a href="https://twitter.com/NuwaLabs" target="_blank">
+                    <Button size="sm" color="gray_900_01" className="w-[39px] rounded-[7px]">
+                      <Img src="images/img_airplane.svg" />
+                    </Button>
+                  </a>
+                  <a href="https://t.me/NuwaLabs" target="_blank">
+                    <Button size="sm" color="gray_900_01" className="w-[38px] rounded-[7px]">
+                      <Img src="images/img_save.svg" />
+                    </Button>
+                  </a>
+                  <a href="https://discord.com/invite/h8kgEspuhM" target="_blank">
+                    <Button size="sm" color="gray_900_01" className="w-[39px] rounded-[7px]">
+                      <Img src="images/img_user.svg" />
+                    </Button>
+                  </a>
+                  <Button size="sm" color="gray_900_01" className="w-[38px] rounded-[7px]" onClick={copyEmail}>
                     <Img src="images/img_1_black_900_03.svg" />
                   </Button>
                 </div>

@@ -16,6 +16,7 @@ const contentStyle = [
       field2: "Digital Life Protocol",
       detail:'Abstraction Layer of Digital Life Technologies. Build, deploy & monetize digital life assets',
       btn:'Read',
+      link:'https://docs.nuwalabs.org/'
     },
   },
   {
@@ -30,6 +31,7 @@ const contentStyle = [
       field2: "Platform",
       detail:'Create and own your digital lives.',
       btn:'Create',
+      link:'https://create.nuwalabs.org/'
     },
   },
   {
@@ -45,6 +47,7 @@ const contentStyle = [
       field2: "",
       detail:'A secure, transparent, and decentralized marketplace for digital life.',
       btn:'Documentation',
+      link:'https://docs.nuwalabs.org/'
     },
   },
   {
@@ -59,6 +62,7 @@ const contentStyle = [
       field2: "",
       detail:'Interact with all sorts of digital lives.',
       btn:'Read',
+      link:'https://roleai.nuwalabs.org/'
     },
   },
   {
@@ -74,6 +78,7 @@ const contentStyle = [
       field2: "Builder",
       detail:'Extremely easy to integrate any digital life to your games with simple APIs.',
       btn:'Read',
+      link:'https://docs.nuwalabs.org/'
     },
   }
 ];

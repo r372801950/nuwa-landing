@@ -37,6 +37,7 @@ export default function LaboratorySlick({info}) {
                   color="gray_900_01"
                   rightIcon={<Img src="images/img_group_35697.svg" alt="Group 35697" className="h-[10px] w-[35px]" />}
                   className="relative ml-2 mt-[-18px] min-w-[231px] gap-[35px] rounded-[26px] font-semibold hover:bg-yellow-800 hover:text-white-A700_01 hover:border-yellow-800"
+                  onClick={() => window.open(info.link, '_blank')}
                 >
                   {info.btn}
                 </Button>
