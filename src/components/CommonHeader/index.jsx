@@ -2,12 +2,22 @@ import { Img } from "../Img";
 import { Heading } from "../Heading";
 import { Text } from "../Text";
 import { Button } from "../Button";
+import { message } from "antd";
 
 
 export default function CommonHeader(){
+  const [messageApi, contextHolder] = message.useMessage();
+
+  const success = () => {
+    messageApi.open({
+      type: 'success',
+      content: 'Coming Soon',
+    });
+  };
 
   return (
     <>
+      {contextHolder}
       <header className="mx-auto flex w-full max-w-[1300px] flex-col items-start md:p-5">
         {/* logo and menu section */}
         <div className="flex items-center justify-between gap-5 self-stretch md:flex-col">
@@ -50,6 +60,7 @@ export default function CommonHeader(){
                 variant="fill"
                 color="blue_gray"
                 className="min-w-[39px] rounded-br-[12px] rounded-tr-[12px] font-sfpro font-medium tracking-[0.14px]"
+                onClick={success}
               >
                 CN
               </Button>
