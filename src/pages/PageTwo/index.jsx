@@ -62,19 +62,19 @@ export default function PageTwo() {
           {/* main content section */}
           <div className="flex flex-col items-center gap-[43px]">
             <div className="relative flex self-stretch justify-between overflow-auto md:flex-col  h-[304px]">
-              <div className="flex w-[35%] items-center gap-4 rounded-r-[152px] bg-yellow-800_19 p-[54px] md:ml-0 md:w-full md:p-5">
-                <div className="w-[35%] font-sans text-base font-normal leading-6 text-left bg-black">
+              <div className="w-[35%] rounded-r-[152px] bg-yellow-800_19 relative">
+                <div className="w-[50%] font-sans text-xl font-normal leading-6 text-left bg-black absolute top-1/2 left-[5%] transform -translate-y-1/2">
                   {slideInfo[currentSlide>0?currentSlide-1:slideInfo.length-1].title}
                 </div>
 
               </div>
-              <div  className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
+              <div  className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] z-10">
                 <ResizableSlick  onCurrentSlideChange={handleSlideChange} />
 
               </div>
-              <div
-                className="flex justify-end w-[35%] items-center gap-4 rounded-l-[152px] bg-yellow-800_19 p-[54px] md:ml-0 md:w-full md:p-5">
-                <div className="w-[35%] font-sans text-base font-normal leading-6 text-left bg-black">
+              <div className="w-[35%] rounded-l-[152px] bg-yellow-800_19 relative">
+                <div
+                  className="w-[50%] font-sans text-xl font-normal leading-6 text-right bg-black absolute top-1/2 right-[5%] transform -translate-y-1/2">
                   {slideInfo[currentSlide < slideInfo.length - 1 ? currentSlide + 1 : 0].title}
                 </div>
 

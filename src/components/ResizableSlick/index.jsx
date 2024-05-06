@@ -56,12 +56,7 @@ function ResizableSlick({ onCurrentSlideChange }) {
   };
   return (
     <div className="slider-container">
-      <div
-        style={{
-          width: 1100 + "px",
-          display: display ? "block" : "none",
-        }}
-      >
+      <div className="custom-container" style={{ display: display ? "block" : "none" }}>
         <Slider {...settings}>
           <div>
             <div className="h-[200px] flex justify-center items-center">
