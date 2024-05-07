@@ -70,7 +70,7 @@ function ResizableSlick({ onCurrentSlideChange }) {
           <div>
             <div className="h-[200px] flex justify-center items-center">
               <Img
-                src="images/img_66_1.png"
+                src="images/game.png"
                 alt="image_three"
                 className="h-[103px] w-[156px]"
               />

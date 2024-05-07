@@ -27,9 +27,9 @@
 }
 
 /* 屏幕宽度至少为1960px */
-@media (min-width: 1960px) {
+@media (min-width: 1920px) {
     .custom-container {
-        width: 1274px;
+        width: 1350px;
     }
 }
 

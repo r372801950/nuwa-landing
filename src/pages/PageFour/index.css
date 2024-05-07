@@ -41,7 +41,7 @@
 .contentBg4{
 
     background: url("/public/images/page4/bg8.png");
-    animation: breathe4 2s infinite;
+    animation: breathe4 3s infinite;
 }
 @keyframes breathe4 {
     0%, 100% {

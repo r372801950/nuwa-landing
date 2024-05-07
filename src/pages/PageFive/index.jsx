@@ -126,7 +126,7 @@ export default function PageFive() {
                     </div>
                     <div className="flex items-center gap-[23px]">
                       <a onClick={copyText}
-                         className="w-[194px] hover:bg-gray-900_02 hover:text-white-A700_01 text-[12px] h-[37px] border-gray-900_01 border border-solid text-black-900_03 rounded-[18px] flex items-center justify-center text-center cursor-pointer">Documentations</a>
+                         className="w-[194px] hover:bg-gray-900_02 hover:text-white-A700_01 text-[12px] h-[37px] border-gray-900_01 border border-solid text-black-900_03 rounded-[18px] flex items-center justify-center text-center cursor-pointer">Donate</a>
                       <Img src="images/page5/emo3.png" alt="image_three"
                            className="h-[80px] w-[80px] img-hover-animate" />
                     </div>
@@ -144,14 +144,16 @@ export default function PageFive() {
                     <Text as="p" className="mt-8 w-[94%] !text-gray-900 md:w-full">
                       Join the world-class team and co-create the “Digital Symbiosis Era”!
                     </Text>
-                    <div className="mt-[86px] flex items-center gap-[17px] self-stretch">
-                      <Button shape="round" color="gray_900_01" className="min-w-[194px] sm:px-5">
-                        info@nuwalabs.org
-                      </Button>
-                      <Img src="images/page5/emo2.png" alt="image_three"
-                           className="h-[80px] w-[80px] img-hover-animate" />
-                    </div>
+                  <div className="mt-[86px] flex items-center gap-[17px] self-stretch">
+                    <a onClick={copyEmail}
+                       className="w-[194px] hover:bg-gray-900_02 hover:text-white-A700_01 text-[12px] h-[37px] border-gray-900_01 border border-solid text-black-900_03 rounded-[18px] flex items-center justify-center text-center cursor-pointer">info@nuwalabs.org</a>
+                    {/*<Button shape="round" color="gray_900_01" className="min-w-[194px] sm:px-5">*/}
+                    {/*  info@nuwalabs.org*/}
+                    {/*</Button>*/}
+                    <Img src="images/page5/emo2.png" alt="image_three"
+                         className="h-[80px] w-[80px] img-hover-animate" />
                   </div>
+                </div>
                 </div>
                 <div className="rounded-[22px] bg-white-A700_01 img-father">
                   <div className="mt-[15px] flex flex-col p-3.5">

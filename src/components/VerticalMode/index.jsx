@@ -15,7 +15,7 @@ const contentStyle = [
       field1:'BRC-1111',
       field2: "Digital Life Protocol",
       detail:'Abstraction Layer of Digital Life Technologies. Build, deploy & monetize digital life assets',
-      btn:'Read',
+      btn:'Documentations',
       link:'https://docs.nuwalabs.org/'
     },
   },
@@ -46,7 +46,7 @@ const contentStyle = [
       field1:'Digital Life Exchange',
       field2: "",
       detail:'A secure, transparent, and decentralized marketplace for digital life.',
-      btn:'Documentation',
+      btn:'Documentations',
       link:'https://docs.nuwalabs.org/'
     },
   },
@@ -61,7 +61,7 @@ const contentStyle = [
       field1:'role.ai',
       field2: "",
       detail:'Interact with all sorts of digital lives.',
-      btn:'Read',
+      btn:'Play',
       link:'https://roleai.nuwalabs.org/'
     },
   },
@@ -77,7 +77,7 @@ const contentStyle = [
       field1:'Digital Life Game',
       field2: "Builder",
       detail:'Extremely easy to integrate any digital life to your games with simple APIs.',
-      btn:'Read',
+      btn:'Documentations',
       link:'https://docs.nuwalabs.org/'
     },
   }
@@ -102,7 +102,7 @@ const VerticalMode = () => {
     autoplay: true,
     pauseOnHover: false,
     speed: 500,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 6000,
     cssEase: "linear",
     prevArrow: <CustomArrow direction="left" />,
     nextArrow: <CustomArrow direction="right" />,

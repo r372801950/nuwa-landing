@@ -21,7 +21,7 @@ export default function CommonHeader(){
       <header className="mx-auto flex w-full max-w-[1300px] flex-col items-start md:p-5">
         {/* logo and menu section */}
         <div className="flex items-center justify-between gap-5 self-stretch md:flex-col">
-          <Img src="images/img_group_35684.png" alt="image" className="h-[19px] w-[9%] object-cover md:w-full" />
+          <Img src="images/logo.png" alt="image" className="w-[9%] object-cover md:w-full" />
           <div className="flex w-[38%] items-center justify-between gap-5 md:w-full sm:flex-col">
             <ul className="flex flex-wrap gap-[49px]">
               <li>
@@ -70,9 +70,9 @@ export default function CommonHeader(){
             </div>
           </div>
         </div>
-        <Text size="xs" as="p" className="relative mt-[-3px] text-center !text-blue_gray-700">
+        {/*<Text size="xs" as="p" className="relative mt-[-3px] text-center !text-blue_gray-700">
           Nuwa Digital Life Labs
-        </Text>
+        </Text>*/}
       </header>
     </>
   )
