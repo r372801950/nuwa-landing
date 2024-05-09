@@ -80,7 +80,7 @@ export default function PageTwo() {
 
               </div>
             </div>
-            <div className="mx-auto flex w-full max-w-[1305px] flex-col items-center md:p-5">
+            <div className="mx-auto flex w-full max-w-[1305px] flex-col items-center md:p-5 absolute top-[61%]">
               <div className="flex items-start gap-[30px] self-stretch md:flex-col">
                 <Text size="4xl" as="p" className="w-[39%] !font-pangmenzhengdao md:w-full">
                   <span className="text-black-900_03">

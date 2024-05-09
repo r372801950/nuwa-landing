@@ -18,11 +18,11 @@ export default function CommonHeader(){
   return (
     <>
       {contextHolder}
-      <header className="mx-auto flex w-full max-w-[1300px] flex-col items-start md:p-5">
+      <header className="mx-auto flex w-full max-w-[90%] flex-col items-start md:p-5">
         {/* logo and menu section */}
         <div className="flex items-center justify-between gap-5 self-stretch md:flex-col">
           <Img src="images/logo.png" alt="image" className="w-[9%] object-cover md:w-full" />
-          <div className="flex w-[38%] items-center justify-between gap-5 md:w-full sm:flex-col">
+          <div className="flex items-center gap-10 md:w-full sm:flex-col">
             <ul className="flex flex-wrap gap-[49px]">
               <li>
                 <a href="https://create.nuwalabs.org/" target="_blank" className="cursor-pointer">

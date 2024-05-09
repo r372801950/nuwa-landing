@@ -7,7 +7,7 @@ const contentStyle = [
   {
     style:{
       backgroundImage: "url('images/page3/page3bg1.png')",
-      backgroundSize: "980px",
+      backgroundSize: "68%",
     },
     info:{
       title: 'Digital Life +',
@@ -22,7 +22,7 @@ const contentStyle = [
   {
     style:{
       backgroundImage: "url('images/page3/page3bg2.png')",
-      backgroundSize: "1084px",
+      backgroundSize: "60%",
     },
     info:{
       title: 'Digital Life +',
@@ -37,7 +37,7 @@ const contentStyle = [
   {
     style:{
       backgroundImage: "url('images/page3/page3bg3.png')",
-      backgroundSize: "980px",
+      backgroundSize: "68%",
 
     },
     info:{
@@ -53,7 +53,7 @@ const contentStyle = [
   {
     style:{
       backgroundImage: "url('images/page3/page3bg4.png')",
-      backgroundSize: "887px",
+      backgroundSize: "58%",
     },
     info:{
       title: 'Digital Life +',
@@ -99,7 +99,7 @@ const VerticalMode = () => {
     infinite: true,
     slidesToScroll: 1,
     swipeToSlide: true,
-    autoplay: true,
+    // autoplay: true,
     pauseOnHover: false,
     speed: 500,
     autoplaySpeed: 6000,

@@ -39,8 +39,10 @@ export default function PageThree() {
             </p>
           </div>
 
+          {/*absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2*/}
+
           <div className="content4 absolute top-0 right-[20px] h-full flex justify-center items-center">
-            <div className="contentBg4 w-full bg-cover h-full absolute top-0 right-0"></div>
+            <div className="contentBg4 w-full h-full absolute top-0 right-0"></div>
             <img src="images/page4/img8.png" alt="nuwa" />
           </div>
 
