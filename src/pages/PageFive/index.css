@@ -48,3 +48,23 @@
     }
 }
 
+/* 屏幕宽度至少为1440px */
+@media (min-width: 1440px) {
+    .banner {
+        gap: 54px;
+    }
+}
+
+/* 屏幕宽度至少为1960px */
+@media (min-width: 1920px) {
+    .banner {
+        gap: 54px;
+    }
+}
+
+/* 屏幕宽度至少为2560px */
+@media (min-width: 2500px) {
+    .banner {
+        gap: 237px;
+    }
+}

@@ -48,19 +48,19 @@ export default function PageFive() {
         />
       </Helmet>
       <div
-        className="flex w-full flex-col items-center gap-[19px] bg-gradient-to-r from-white-A700 to-gray-200 pt-[45px] shadow-xs md:gap-[507px] md:pt-5 sm:gap-[338px]">
+        className="flex w-full min-h-full flex-col items-center gap-[19px] bg-gradient-to-r from-white-A700 to-gray-200 pt-[45px] shadow-xs md:gap-[507px] md:pt-5 sm:gap-[338px]">
         {/*<div className="flex w-full flex-col items-center gap-[676px] bg-gradient-to-r from-green-400 to-blue-500 pt-[45px] shadow-xs md:gap-[507px] md:pt-5 sm:gap-[338px]">*/}
         <div className="mx-auto flex w-full max-w-[1303px] flex-col gap-9 md:p-5">
           {/* header section */}
           {/*<Header className="flex items-center justify-between gap-5 md:flex-col" />*/}
           {/*<CommonHeader />*/}
           <div className="h-[50px]"></div>
-          <div className="flex flex-col gap-[55px] sm:gap-[27px]">
+          <div className="flex flex-col banner sm:gap-[27px]">
             {/* hero section */}
             <div className="flex gap-[22px] md:flex-col">
               {/*<div className="flex w-[45%] h-[805px] flex-col items-center gap-12 rounded-[22px] bg-white-A700_01 py-[54px]">*/}
               <div
-                className="flex w-[45%] h-[89.5vh] flex-col items-center gap-12 rounded-[22px] bg-white-A700_01 py-[54px]">
+                className="flex w-[45%] flex-col items-center gap-12 rounded-[22px] bg-white-A700_01 py-[54px] pb-[27px]">
                 <div className="flex flex-col items-center self-stretch">
                   <div className="breathing-box relative">
                     <div className="breathing-circle"></div>

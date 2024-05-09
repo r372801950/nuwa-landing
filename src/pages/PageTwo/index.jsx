@@ -54,7 +54,7 @@ export default function PageTwo() {
           content="Dive into advanced NLP research at Role.ai. Explore our focus on text understanding, generation, and intelligent dialogue technologies."
         />
       </Helmet>
-      <div className="flex w-full h-[100vh] flex-col items-center gap-[107px] bg-gray-100 pt-[95px] shadow-xs md:gap-20 md:pt-5 sm:gap-[53px]">
+      <div className="flex w-full h-[100vh] relative flex-col items-center gap-[107px] bg-gray-100 pt-[95px] shadow-xs md:gap-20 md:pt-5 sm:gap-[53px]">
         {/* header section */}
         {/*<CommonHeader />*/}
         <div></div>
